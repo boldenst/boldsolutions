@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    /*Indsæt font her*/ 
+    font-family: centurygothic;
+    }
+
+@font-face {
+    font-family: centurygothic;
+    src: url(./fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
+  }
+
+  
