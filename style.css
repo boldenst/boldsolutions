@@ -3,11 +3,264 @@
     margin: 0;
     /*Indsæt font her*/ 
     font-family: centurygothic;
+    z-index: 100;
     }
 
 @font-face {
     font-family: centurygothic;
     src: url(./fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
   }
+/*Her styles headeren*/
+  header {
+      z-index: 200;
+      width: 100vw;
+      height: 3.5rem;
+      background-color: #0A0A0A;
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-bottom: 2px solid #F58F4B;
+  }
 
+  .toplogo {
+      width: 13rem;
+      margin-top: 0.8rem;
+      margin-left: 2.5rem;
+  }
+
+/* Menu lånt fra tidligere projekt men er modificeret*/
+
+
+.sidenav {
+    z-index: 250;
+    height: 100vh;
+    width: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #0A0A0A;
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding-top: 60px;
+  }
   
+  .sidenav a {
+    text-transform: uppercase;
+    letter-spacing: 0.35ch;
+    text-align: center;
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    z-index: 250;
+    color: #F58F4B;
+    position: absolute;
+    top: -1.3rem;
+    right: -0.8rem;
+    font-size: 6ch;
+    
+  }
+
+.burgerdiv {
+  z-index: 0;
+  position: absolute;
+    right: 0.7rem;
+    top: 0.9rem;
+}
+
+.burgerdiv div {
+    width: 1.8rem;
+    height: 2px;
+    margin: 0.37rem;
+    background-color: #F58F4B;    
+}
+  /*Menu end*/
+
+
+  /* Index Start */
+
+
+  .landing-grid {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+    background-color: #0A0A0A;
+    margin-top: 3.5rem;
+    padding-top: 15rem;
+    padding-bottom: 60vh;
+    grid-area: landing;
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". . text text . ."
+    ". logo logo logo logo ."
+    ". more more more more .";
+      }
+
+  .landing-grid h2 {
+      color: white;
+      grid-area: text;
+      font-size: 1.4em;
+      font-weight: 100;
+      text-align: center;
+  }
+.landing-grid img {
+    grid-area: logo;
+    width: 100%;
+}
+
+.landing-grid h3 {
+    margin-top: 9rem;
+    grid-area: more;
+    color: #F58F4B;
+    font-size: 2.5ch;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+/* Her styles pilen på siden, som er animeret til at pege ned ad, den indikerer at der er mere indhold længere nede på siden---------------------------------------------------------------------*/
+.scrolldown{
+	position: absolute;
+	top: 85vh;
+	margin-left: 50vw;	
+	width: 6rem;
+	height: 6rem;
+	transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+.scrolldown span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+	animation: animate 1.5s linear infinite;
+	opacity: 0;
+}
+
+.scrolldown span:nth-child(1){
+	transform: translate(-15px,-15px);
+	animation-delay: 0.4s;
+}
+
+.scrolldown span:nth-child(2){
+	transform: translate(0,0);
+	animation-delay: 0.2s;
+}
+
+.scrolldown span:nth-child(3){
+	transform: translate(15px,15px);
+ 	animation-delay: 0s;
+}
+
+@keyframes animate{
+	0%{
+	top: -5px;
+	left: -5px;
+	opacity: 0;
+	}
+	25%{
+	top: 0px;
+	left: 0px;
+	opacity: 1;
+	}
+	100%{
+	top: 5px;
+	left: 5px;
+	opacity: 0;
+	}
+}
+
+
+.solutions-grid {
+  margin-top: 6rem;
+  margin-bottom: 10rem;
+  grid-area: solutions;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas: 
+  ". heading heading heading heading ."
+  ". description description description description ."
+  "setup setup setup setup setup setup"
+  ". . link link . .";
+    
+
+}
+
+.solutions-grid h2 {
+  grid-area: heading;
+  color: #0A0A0A;
+  font-size: 4.2ch;
+  text-transform: capitalize;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.solutions-grid p {
+  grid-area: description;
+}
+
+
+.solutions-grid img {
+grid-area: setup;
+margin-top: 3rem;
+width: 100%;
+}
+
+.solutions-grid a {
+  padding-top: 0.4rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
+grid-area: link;
+width: 100%;
+border: 2px solid #0a0a0a;
+text-align: center;
+border-radius: 1.5rem;
+font-weight: 500;
+font-size: 2.5ch;
+}
+
+footer {
+  clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+  width: 100%;
+  background-color: #525252;
+  height: 25rem;
+}
+
+
+
+
+
+    /* Index Start */
+  /* Portfolio Start */
+  /* Portfolio end */
+  /* CV Start */
+  /* CV end */
+  /* About Start */
+  /* About end */
+  /* Contact Start */
+  /* Contact end */
+
+  /*Styles til desktop*/
+
+
+
