@@ -374,7 +374,6 @@ font-size: 1.4ch;
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
     background-color: #0a0a0a;
     margin-top: 6rem;
-    margin-bottom: 9rem;
     padding-top: 9rem;
     padding-bottom: 14rem;
     grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
@@ -409,6 +408,64 @@ margin-top: 2rem;
 margin-bottom: 1rem;
 font-size: 1.4ch;
   }
+
+  .volta-project {
+    margin-bottom: 9rem;
+    padding-bottom: 3rem;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". description description description description ."
+    ". skills skills skills skills ."
+    ". . isotheme isotheme . ."
+    ". isoname isoname isoname isoname ."
+    ". isoimg isoimg isoimg isoimg ."
+    ". project project project project ."
+    ". . link link . .";
+  }
+
+
+  .video-projects {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
+    background-color: #0a0a0a;
+    margin-top: 6rem;
+    padding-top: 9rem;
+    padding-bottom: 14rem;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". fullofwar fullofwar fullofwar fullofwar ."
+    ". video video video video .";
+  }
+
+  .video-heading {
+    grid-area: heading;
+    color: white;
+    margin-top: 5.5rem;
+    text-align: center;
+    font-size: 4ch;
+    font-weight: bold;  
+  }
+
+  .fullofwar {
+    grid-area: fullofwar;
+    padding-top: 5rem;
+    height: 10.55rem;
+  }
+
+  .video-project {
+    grid-area: video;
+    padding-top: 5rem;
+    height: 10.55rem;
+  }
+
+  
 
 
   /* Portfolio end */
