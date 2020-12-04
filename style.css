@@ -481,6 +481,79 @@ font-size: 1.4ch;
     width: 100%;
   }
 
+  .contact {
+      background-color: #0A0A0A;
+      margin-top: 3.5rem;
+      padding-top: 5rem;
+      padding-bottom: 60vh;
+      display: grid;
+      grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+      grid-template-rows: auto;
+      column-gap: 0.5rem;
+      grid-template-areas: 
+      ". . heading heading . ."
+      ". info info info info ."
+      ". more more more more ."
+      ". write write write write ."
+      ". form form form form .";
+  }
+
+  .contact-heading {
+    color: white;
+    grid-area: heading;
+    text-align: center;
+    font-size: 4ch;
+  }
+  .contact-description {
+    color: white;
+    grid-area: info;
+    margin-top: 4rem;
+  }
+
+  .contact-me {
+    color: #F58F4B;
+    grid-area: more;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 5.5rem;
+    font-size: 3ch;
+  }
+
+  .write {
+    color: white;
+    grid-area: write;
+    text-align: center;
+    margin-top: 20rem;
+    font-size: 4.4ch;
+    font-weight: lighter;
+  }
+
+  .contact-form {
+    grid-area: form;
+    margin-top: 5rem;
+  }
+
+.form-control {
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.submit {
+  padding-top: 0.7rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.7rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
+grid-area: link;
+width: 100%;
+border: 1px solid white;
+text-align: center;
+border-radius: 1rem;
+font-weight: 500;
+font-size: 2.5ch;
+}
+
 
   
 
