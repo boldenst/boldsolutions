@@ -222,33 +222,33 @@ width: 100%;
 }
 
 .primary-link {
-  padding-top: 0.4rem;
+  padding-top: 0.7rem;
   margin-top: 0.5rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.7rem;
   text-transform: capitalize;
   color: #F58F4B;
   text-decoration: none;
 grid-area: link;
 width: 100%;
-border: 2px solid #0a0a0a;
+border: 1px solid #0a0a0a;
 text-align: center;
-border-radius: 1.5rem;
+border-radius: 1rem;
 font-weight: 500;
 font-size: 2.5ch;
 }
 
 .primary-link-black {
-  padding-top: 0.4rem;
+  padding-top: 0.7rem;
   margin-top: 0.5rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.7rem;
   text-transform: capitalize;
   color: #F58F4B;
   text-decoration: none;
 grid-area: link;
 width: 100%;
-border: 2px solid white;
+border: 1px solid white;
 text-align: center;
-border-radius: 1.5rem;
+border-radius: 1rem;
 font-weight: 500;
 font-size: 2.5ch;
 }
