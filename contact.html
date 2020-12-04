@@ -11,7 +11,53 @@
     <link rel="shortcut icon" href="./images/favicon.ico">
 </head>
 <body>
+    <header>
+        <img class="toplogo" src="./images/logoet.png" alt="">  
+
+        <div onclick="openNav()" class="burgerdiv">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
     
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">hjem</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="experience.html">CV</a>     
+        <a href="about.html">om mig</a>
+        <a href="contact.html">kontakt</a>
+        </div>
+    </header>    
+    <section class="contact">
+        <h1 class="contact-heading">Kontakt</h1>
+        <p class="contact-description">Ønsker du at komme i kontakt med Bold Solutions, kan du enten finde os på de sociale medier eller udfylde kontaktformularen på denne side. 
+            <br> <br>
+            I bunden af siden kan man også se e-mailen. </p>
+        <h2 class="contact-me">Skriv til mig</h2>
+        <h3 class="write">Skriv en besked</h3>
+
+
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="contact-form-handler.php"></form>
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
+            <input name="email" type="email" class="form-control" placeholder="Your email" required>
+            <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
+            <input type="submit" class="form-control submit" value="SEND MESSAGE">
+
+        </div>
+
+    </section>
+
+    <!-- Her starter (SCROLL DOWN) paa siden -->
+    <div>
+        <div class="scrolldown">
+            <span></span>
+        </div>
+    </div>
+<!-- Her slutter (SCROLL DOWN) paa siden -->
+
 
 
 <script src="scripts.js"></script>
