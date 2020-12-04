@@ -25,7 +25,7 @@
   .toplogo {
       width: 13rem;
       margin-top: 0.8rem;
-      margin-left: 2rem;
+      margin-left: 1.75rem;
   }
 
 /* Menu lånt fra tidligere projekt men er modificeret*/
@@ -237,6 +237,22 @@ font-weight: 500;
 font-size: 2.5ch;
 }
 
+.primary-link-black {
+  padding-top: 0.4rem;
+  margin-top: 0.5rem;
+  padding-bottom: 0.4rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
+grid-area: link;
+width: 100%;
+border: 2px solid white;
+text-align: center;
+border-radius: 1.5rem;
+font-weight: 500;
+font-size: 2.5ch;
+}
+
 footer {
   clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
   width: 100%;
@@ -307,7 +323,7 @@ footer {
 
   .zealand-heading {
     grid-area: heading;
-    color: #0A0A0A;
+    color: #0a0a0a;
     font-size: 3.6ch;
     text-transform: capitalize;
     font-weight: bolder;
@@ -348,12 +364,52 @@ font-size: 1.4ch;
   }
   
   
-  .iso-project img {
+  .projectspic {
   grid-area: isoimg;
   margin-top: 1rem;
   width: 100%;
   }
   
+  .balletto-project {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
+    background-color: #0a0a0a;
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+    padding-top: 9rem;
+    padding-bottom: 14rem;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". description description description description ."
+    ". skills skills skills skills ."
+    ". . isotheme isotheme . ."
+    ". isoname isoname isoname isoname ."
+    ". isoimg isoimg isoimg isoimg ."
+    ". project project project project ."
+    ". . link link . .";
+  }
+
+  .project-heading-black {
+    color: white;
+    margin-top: 5.5rem;
+    grid-area: isotheme;
+    text-align: center;
+    font-size: 4ch;
+    font-weight: bold;
+  }
+
+
+  .project-description-black {
+    color: white;
+grid-area: project;
+margin-top: 2rem;
+margin-bottom: 1rem;
+font-size: 1.4ch;
+  }
+
 
   /* Portfolio end */
   /* CV Start */
