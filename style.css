@@ -531,29 +531,15 @@ font-size: 1.4ch;
   .contact-form {
     grid-area: form;
     margin-top: 5rem;
+    color: white;
   }
 
-.form-control {
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-
-.submit {
-  padding-top: 0.7rem;
-  margin-top: 0.5rem;
-  padding-bottom: 0.7rem;
-  text-transform: capitalize;
-  color: #F58F4B;
-  text-decoration: none;
-grid-area: link;
-width: 100%;
-border: 1px solid white;
-text-align: center;
-border-radius: 1rem;
-font-weight: 500;
-font-size: 2.5ch;
-}
-
+  .contact-form input {
+    width: 100%;
+  }
+  .contact-form textarea {
+    width: 100%;
+  }
 
   
 
