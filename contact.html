@@ -38,15 +38,13 @@
         <h2 class="contact-me">Skriv til mig</h2>
         <h3 class="write">Skriv en besked</h3>
 
-
-        <div class="contact-form">
-            <form id="contact-form" method="post" action="contact-form-handler.php"></form>
-            <input name="name" type="text" class="form-control" placeholder="Your Name" required>
-            <input name="email" type="email" class="form-control" placeholder="Your email" required>
-            <textarea name="message" class="form-control" placeholder="Message" row="4" required></textarea>
-            <input type="submit" class="form-control submit" value="SEND MESSAGE">
-
-        </div>
+            <form class="contact-form" action="contactform.php" method="post">
+                <input type="text" name="name" placeholder="Full name">
+                <input type="text" name="mail" placeholder="Your e-mail">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit" name="submit">SEND MAIL</button>
+            </form>
 
     </section>
 
