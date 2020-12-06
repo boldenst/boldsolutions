@@ -575,11 +575,88 @@ font-size: 1.4ch;
 
   }
 
-  #counter {
-    color: #F58F4B;
-    font-size: 5ch;
-    font-weight: bold;
+  .about {
+    margin-top: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+    background-color: #0a0a0a;
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". . mypic mypic . ."
+    ". name name name name ."
+    ". age age age age ."
+    ". where where where where ."
+    ". counter counter counter counter ."
+    ". more more more more ."
+    ". write write write write ."
+    ". form form form form .";
   }
+
+.about h1 {
+  grid-area: heading;
+  color: white;
+  text-align: center;
+  font-size: 4.5ch;
+}
+
+.about img {
+  margin-top: 3rem;
+  grid-area: mypic;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.name {
+  grid-area: name;
+  color: white;
+  font-size: 1.5ch;
+}
+
+.where {
+  grid-area: where;
+  color: white;
+  font-size: 1.5ch;
+
+}
+  .about-description { 
+    color: white;
+    font-size: 1.5ch;
+  }
+
+  #daybox {
+    color: #F58F4B;
+    grid-area: counter;
+    margin-left: 0.3rem;
+    font-size: 1.5ch;
+
+  }
+  .age {
+    grid-area: age;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .year {
+    color: #F58F4B;
+    font-size: 1.5ch;
+    margin-right: 0.2rem;
+
+  }
+
+  .about h2 {
+    margin-top: 4rem;
+    grid-area: more;
+    font-size: 3ch;
+    font-weight: normal;
+    color: #F58F4B;
+    text-align: center;
+  }
+
+
   
 
 

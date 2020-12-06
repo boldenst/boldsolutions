@@ -8,10 +8,55 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Bold Solutions</title>
+    <link rel="shortcut icon" href="./images/favicon.ico">
+
 </head>
+
 <body>
+    <header>
+        <img class="toplogo" src="./images/logoet.png" alt="">  
+
+        <div onclick="openNav()" class="burgerdiv">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
     
-    <div id="counter">7807</div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">hjem</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="experience.html">CV</a>     
+        <a href="about.html">om mig</a>
+        <a href="contact.html">kontakt</a>
+        </div>
+    </header>
+
+    <section class="about">
+        <h1>Bag ved Bold</h1>
+        <img src="./images/migs.jpg" alt="">
+        <p class="name" >Oliver Hansen </p>
+        <div class="age">
+            <p class="year"> 21 </p>
+            <p class="about-description"> år eller</p> 
+            <div id="daybox"></div>
+       </div>
+
+        <p class="where">Bosat i Køge</p> 
+        <h2>Mere om mig</h2>
+
+
+<!-- Her starter (SCROLL DOWN) paa siden -->
+    <div>
+        <div class="scrolldown">
+            <span></span>
+        </div>
+    </div>
+<!-- Her slutter (SCROLL DOWN) paa siden -->
+
+    </section>
+
 
 
 <script src="scripts.js"></script>
