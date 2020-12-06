@@ -41,7 +41,7 @@ function openNav() {
                   secs=Math.floor(amount);//seconds
   
                   if(days != 0){out += days +" dag"+((days!=1)?"e":"")+", ";}
-                  if(days != 0 || hours != 0){out += hours +" time"+((hours!=1)?"r":"")+", ";}
+                  if(days != 0 || hours != 0){out += hours +" time"+((hours!=1)?"r":"")+" og ";}
                   if(days != 0 || hours != 0 || mins != 0){out += mins +" minut"+((mins!=1)?"ter":"");}
                   document.getElementById('daybox').innerHTML=out;
   
