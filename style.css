@@ -255,7 +255,7 @@ font-size: 2.5ch;
 
 footer {
   clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-  width: 100%;
+  width: 100vw;
   background-color: #525252;
   height: 25rem;
 }
@@ -481,6 +481,245 @@ font-size: 1.4ch;
     width: 100%;
   }
 
+
+
+
+
+  
+
+
+  /* Portfolio end */
+
+  /* CV Start */
+  .experience {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+    background-color: #0A0A0A;
+    margin-top: 3.5rem;
+    padding-top: 7rem;
+    padding-bottom: 70vh;
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". . heading heading . ."
+    ". intro intro intro intro ."
+    ". more more more more .";
+      }
+
+  .experience h1 {
+     color: white;
+     grid-area: heading;
+     text-align: center;
+     font-size: 4ch;
+     font-weight: 100;
+    margin-bottom: 2rem;
+  }
+
+  .experience p {
+    color: white;
+    grid-area: intro;
+    font-weight: 100;
+  }
+
+  .experience h3 {
+    margin-top: 9rem;
+    grid-area: more;
+    color: #F58F4B;
+    font-size: 2.5ch;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .cv-more {
+    margin-bottom: 9rem;
+    padding-top: 5rem;
+    padding-bottom: 20rem;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". description description description description ."
+    ". zeal zeal zeal zeal ."
+    ". . isotheme isotheme . ."
+    ". isoname isoname isoname isoname ."
+    ". isoimg isoimg isoimg isoimg ."
+    ". project project project project ."
+    ". . link link . .";
+  }
+
+  .cv-more h2 {
+    grid-area: heading;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  .koegegym {
+    grid-area: description;
+    margin-top: 2rem;
+  }
+
+  .zealandacad {
+    grid-area: zeal;
+    margin-top: 1rem;
+  }
+
+  .cv-work {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    background-color: #0a0a0a;
+    margin-top: 6rem;
+    padding-top: 9rem;
+    padding-bottom: 40rem;
+    margin-bottom: -8rem;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". webhelp webhelp webhelp webhelp ."
+    ". telia telia telia telia .";
+  }
+
+  .cv-work h2 {
+    color: white;
+    grid-area: heading;
+    text-align: center;
+    margin-top: 5rem;
+    text-transform: capitalize;
+  }
+
+  .webhelp {
+    color: white;
+    grid-area: webhelp;
+    margin-top: 2rem;
+  }
+
+  .telia {
+    color: white;
+    grid-area: telia;
+    margin-top: 1rem;
+  }
+
+  /* CV end */
+
+  /* About Start */
+
+  .about {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+    margin-top: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 24rem;
+    background-color: #0a0a0a;
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". . mypic mypic . ."
+    ". name name name name ."
+    ". age age age age ."
+    ". where where where where ."
+    ". counter counter counter counter ."
+    ". more more more more .";
+  }
+
+.about h1 {
+  grid-area: heading;
+  color: white;
+  text-align: center;
+  font-size: 4.5ch;
+}
+
+.about img {
+  margin-top: 3rem;
+  grid-area: mypic;
+  width: 100%;
+  margin-bottom: 3rem;
+}
+.name {
+  grid-area: name;
+  color: white;
+  font-size: 1.5ch;
+}
+
+.where {
+  grid-area: where;
+  color: white;
+  font-size: 1.5ch;
+
+}
+  .about-description { 
+    color: white;
+    font-size: 1.5ch;
+  }
+
+  #daybox {
+    color: #F58F4B;
+    grid-area: counter;
+    margin-left: 0.3rem;
+    font-size: 1.5ch;
+
+  }
+  .age {
+    grid-area: age;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .year {
+    color: #F58F4B;
+    font-size: 1.5ch;
+    margin-right: 0.2rem;
+
+  }
+
+  .about h2 {
+    margin-top: 3rem;
+    grid-area: more;
+    font-size: 3ch;
+    font-weight: normal;
+    color: #F58F4B;
+    text-align: center;
+  }
+  .about-more {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    display: grid;
+    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading ."
+    ". description description description description ."
+    "setup setup setup setup setup setup"
+    ". . link link . .";
+  }
+  .about-more h2 {
+    grid-area: heading;
+    color: #0A0A0A;
+    font-size: 4.8ch;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-more p {
+    grid-area: description;
+    font-size: 1.6ch;
+  }
+  
+  
+  .about-more img {
+  grid-area: setup;
+  margin-top: 3rem;
+  width: 100%;
+  }
+  /* About end */
+  /* Contact Start */  
   .contact {
     clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
 
@@ -543,6 +782,7 @@ font-size: 1.4ch;
     padding-top: 0.3rem;
     padding-bottom: 0.3rem;
     margin-bottom: 1rem;
+    border: none;
   }
   .contact-form textarea {
     width: 100%;
@@ -550,6 +790,7 @@ font-size: 1.4ch;
     border-radius: 0.4rem;
     padding-top: 0rem;
     padding-bottom: 5rem;
+    border: none;
     
   }
 
@@ -575,20 +816,10 @@ font-size: 1.4ch;
 
   }
 
-  #counter {
-    color: #F58F4B;
-    font-size: 5ch;
-    font-weight: bold;
-  }
-  
 
 
-  /* Portfolio end */
-  /* CV Start */
-  /* CV end */
-  /* About Start */
-  /* About end */
-  /* Contact Start */
+
+
   /* Contact end */
 
   /*Styles til desktop*/
