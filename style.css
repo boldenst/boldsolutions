@@ -822,6 +822,47 @@ font-size: 1.4ch;
 
   /* Contact end */
 
+  /* Submit start*/ 
+.submitted {
+  background-color: #0A0A0A;
+  height: 60vh;
+  padding-top: 40vh;
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". thanks thanks thanks thanks ."
+  ". . back back . .";
+
+}
+.submitted p {
+  color: white;
+  text-align: center;
+  grid-area: thanks;
+  font-size: 1.7ch;
+}
+.submitted a {
+  grid-area: back;
+align-self: center;  
+padding-top: 0.7rem;
+  margin-bottom: 40vh;
+  padding-bottom: 0.7rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
+width: 100%;
+border: 1px solid white;
+text-align: center;
+border-radius: 1rem;
+font-weight: 500;
+font-size: 1.7ch;
+}
+
+
+  /* Submit end*/ 
+
   /*Styles til desktop*/
 
 
