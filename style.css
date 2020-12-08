@@ -798,6 +798,7 @@ font-size: 1.4ch;
     padding-top: 0rem;
     padding-bottom: 5rem;
     border: none;
+    resize: none;
     
   }
 
@@ -823,10 +824,43 @@ font-size: 1.4ch;
 
   }
 
-
-
-
-
+  .scrolldown-contact{
+    position: absolute;
+    top: 78vh;
+    margin-left: 50vw;	
+    width: 6rem;
+    height: 6rem;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+  }
+  
+  .scrolldown-contact span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+  }
+  
+  .scrolldown-contact span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: 0.4s;
+  }
+  
+  .scrolldown-contact span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: 0.2s;
+  }
+  
+  .scrolldown-contact span:nth-child(3){
+    transform: translate(15px,15px);
+     animation-delay: 0s;
+  }
+  
   /* Contact end */
 
   /* Submit start*/ 
@@ -1201,15 +1235,222 @@ font-size: 2ch;
 
 /* cv end*/ 
 /*about start*/
+.about {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  margin-top: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 40rem;
+  row-gap: 1rem;
+  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+  grid-template-areas: 
+  ". . . . heading heading heading heading heading heading . . . ."
+  ". mypic mypic . name name name name . . . . . ."
+  ". mypic mypic . age age age age . . . . . ."
+  ". mypic mypic . where where where where . . . . . ."
+  ". mypic mypic . . . . . . . . . . ."
+  ". . . . . more more more more . . . . .";
+}
 
+.about h1 {
+text-align: center;
+font-size: 8ch;
+margin-bottom: 6rem;
+}
+
+.about img {
+margin-top: 0;
+margin-bottom: 3rem;
+}
+.name {
+font-size: 2.5ch;
+}
+
+.where {
+font-size: 2.5ch;
+
+}
+.about-description { 
+  font-size: 2.5ch;
+}
+
+#daybox {
+  margin-left: 0.3rem;
+  font-size: 2.5ch;
+
+}
+.age {
+  grid-area: age;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.year {
+  color: #F58F4B;
+  font-size: 2.5ch;
+  margin-right: 0.2rem;
+
+}
+
+.about h2 {
+  margin-top: 0.;
+  grid-area: more;
+  font-size: 3ch;
+  font-weight: normal;
+  color: #F58F4B;
+  text-align: center;
+}
+.about-more {
+  margin-top: 25rem;
+  margin-bottom: 25rem;
+  display: grid;
+  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas: 
+  ". heading heading heading heading heading heading . . setup setup setup setup ."
+  ". description description description description description description . . setup setup setup setup .";
+}
+.about-more h2 {
+  grid-area: heading;
+  color: #0A0A0A;
+  font-size: 8ch;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.about-more p {
+  grid-area: description;
+  font-size: 2ch;
+}
+
+
+.about-more img {
+grid-area: setup;
+margin-top: 0;
+width: 100%;
+}
 
 /* about end*/ 
 /*contact start*/
+.contact {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
 
+    margin-top: 3.5rem;
+    padding-top: 14rem;
+    padding-bottom: 60vh;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading . . . . form form form form . ."
+    ". info info info info info . . form form form form . ."
+    ". so-me so-me so-me so-me so-me . . form form form form . ."
+    ". . . . . . . . form form form form . .";
+    margin-bottom: -14rem;
+}
+
+.contact-heading {
+  text-align: left;
+  font-size: 6ch;
+}
+.contact-description {
+  margin-top: 4rem;
+}
+
+.contact-me {
+display: none;
+}
+
+.write {
+display: none;
+}
+
+.contact-form {
+  margin-top: 0;
+}
+
+.contact-form input {
+  width: 100%;
+  border-radius: 0.4rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+.contact-form textarea {
+  width: 100%;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  padding-top: 0rem;
+  padding-bottom: 10rem;
+  border: none;
+  
+}
+
+.contact-form p {
+  margin-bottom: 0.3rem;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  background-color: #0a0a0a;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
+width: 100%;
+border: 1px solid white;
+text-align: center;
+border-radius: 0.7rem;
+font-weight: 500;
+font-size: 1.9ch;
+
+}
+
+.scrolldown-contact {
+  display: none;
+}
 
 /* contact end*/ 
 
 /* submit start*/ 
+.submitted {
+  background-color: #0A0A0A;
+  height: 60vh;
+  padding-top: 40vh;
+  width: 100%;
+  display: grid;
+  row-gap: 1rem;
+  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks ."
+  ". . . . . . back back . . . . . .";
+
+}
+.submitted p {
+  color: white;
+  text-align: center;
+  grid-area: thanks;
+  font-size: 3.5ch;
+}
+.submitted a {
+  grid-area: back;
+align-self: center;  
+padding-top: 0.7rem;
+  margin-bottom: 40vh;
+  padding-bottom: 0.7rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
+width: 100%;
+border: 1px solid white;
+text-align: center;
+border-radius: 1rem;
+font-weight: 500;
+font-size: 1.7ch;
+}
 /* submit end*/ 
 
 
