@@ -22,6 +22,10 @@
       border-bottom: 2px solid #F58F4B;
   }
 
+  header ul {
+    display: none;
+  }
+
   .toplogo {
       width: 13rem;
       margin-top: 0.8rem;
@@ -215,10 +219,14 @@
 }
 
 
-.solutions-grid img {
+.setup-mobile {
 grid-area: setup;
 margin-top: 3rem;
 width: 100%;
+}
+
+.setup-desktop {
+  display: none;
 }
 
 .primary-link {
@@ -305,7 +313,6 @@ footer {
   .iso-project {
     margin-top: 6rem;
     margin-bottom: 9rem;
-    grid-area: solutions;
     grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
     display: grid;
     grid-template-rows: auto;
@@ -865,5 +872,347 @@ font-size: 1.7ch;
 
   /*Styles til desktop*/
 
+@media only screen and (min-width: 1368px) {
+/*Universelt*/
+.burgerdiv {
+  display: none;
+}
 
+header {
+  display: flex;
+  flex-direction: row;
+}
+
+header ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 35%;
+  position: absolute;
+  right: 3.2vw;
+  top: 0.8rem;
+}
+
+header ul li {
+font-size: 2.7ch;
+font-weight: lighter;
+}
+
+header ul li a {
+text-decoration: none;
+color: white;
+}
+
+header ul li a:hover {
+  color: #F58F4B;
+  }
+
+
+
+.toplogo {
+margin-left: 5vw;
+width: 17rem;
+margin-top: 0.4rem;
+}
+.scrolldown{
+	position: absolute;
+	top: 73vh;
+	margin-left: 50vw;	
+	width: 6rem;
+	height: 6rem;
+	transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+
+/*forside start*/
+.landing-grid {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  padding-top: 13rem;
+  padding-bottom: 70vh;
+  grid-template-columns: 10vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10vw;
+  grid-template-areas: 
+  ". . text text text text text text text text text text . ."
+  ". . . logo logo logo logo logo logo logo logo . . ."
+  ". more more more more more more more more more more more more .";
+    }
+
+.landing-grid h2 {
+    font-size: 5ch;
+    font-weight: 100;
+}
+
+
+.landing-grid h3 {
+  margin-top: 5rem;
+  font-size: 3ch;
+  font-weight: lighter;
+}
+
+.solutions-grid {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  padding-bottom: 10rem;
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas: 
+  ". setup setup setup setup setup . heading heading heading heading heading heading ."
+  ". setup setup setup setup setup . description description description description description description ."
+  ". setup setup setup setup setup . . . link link . . .";
+    
+
+}
+
+.solutions-grid h2 {
+  grid-area: heading;
+  color: #0A0A0A;
+  font-size: 9ch;
+  letter-spacing: 0.07ch;
+  text-transform: capitalize;
+  font-weight: bolder;
+  margin-top: 3rem;
+align-self: center 0;}
+
+.solutions-grid p {
+  grid-area: description;
+  font-size: 2.5ch;
+  margin-bottom: 12rem;
+}
+
+
+.setup-desktop {
+  display: block;
+  grid-area: setup;
+  margin-top: 3rem;
+  width: 100%;
+  }
+  
+  .setup-mobile {
+    display: none;
+  }
+
+.primary-link {
+  height: 2rem;
+font-size: 3ch;
+border-width: 2px;
+}
+
+.primary-link:hover {
+background-color: #F58F4B;
+color: white;
+border: #F58F4B;
+}
+
+.primary-link-black:hover {
+  background-color: #F58F4B;
+  color: white;
+  border: #F58F4B;
+  }
+
+/* Forside end*/ 
+/*portfolio start*/
+.portfolio-intro {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+  background-color: #0A0A0A;
+  margin-top: 3.5rem;
+  padding-top: 10rem;
+  padding-bottom: 70vh;
+  display: grid;
+  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas: 
+  ". . . . . heading heading heading heading . . . . ."
+  ". . . intro intro intro intro intro intro intro intro . . ."
+  ". . . . . more more more more . . . . .";
+    }
+
+    .portfolio-intro h1 {
+      text-align: center;
+      font-size: 10ch;
+      letter-spacing: 0.05ch;
+      font-weight: lighter;
+     margin-bottom: 2rem;
+   }
+ 
+   .portfolio-intro p {
+
+     font-weight: 100;
+     font-size: 2.5ch;
+   }
+ 
+   .portfolio-intro h3 {
+     margin-top: 9rem;
+
+     font-size: 4ch;
+     font-weight: lighter;
+     text-align: center;
+   }
+
+   .iso-project {
+    margin-top: 6rem;
+    margin-bottom: 9rem;
+    grid-area: solutions;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading heading heading . . . . . . ."
+    ". description description description description description description . . . . . . ."
+    ". skills skills skills skills skills skills . . . . . . ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . isotheme isotheme isotheme isotheme . ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . isoname isoname isoname isoname isoname ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . project project project project project ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . link . . . . ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . . . . . . .";
+  }
+
+  .zealand-heading {
+    font-size: 8.5ch;
+    margin-bottom: 0.5rem;
+  }
+  
+  .zealand-info {
+    font-size: 2.2ch;
+  }
+
+  .bold-skills {
+    margin-top: 0.8rem;
+    margin-bottom: 5rem;
+    font-size: 2.5ch;
+    font-weight: bold;
+  }
+
+  .project-heading {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 6ch;
+    font-weight: bold;
+  }
+
+  .project-name {
+  text-align: left;
+  font-size: 3ch;
+  }
+
+  .project-description {
+margin-top: 1rem;
+margin-bottom: 4rem;
+font-size: 2ch;
+  }
+  
+  
+  .projectspic {
+  margin-top: 0;
+  }
+
+
+  .balletto-project {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
+    margin-top: 6rem;
+    padding-top: 22rem;
+    padding-bottom: 22rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-areas: 
+    ". isotheme isotheme isotheme isotheme isotheme . isoimg isoimg isoimg isoimg isoimg isoimg ."
+    ". isoname isoname isoname isoname isoname . isoimg isoimg isoimg isoimg isoimg isoimg ."
+    ". project project project project project . isoimg isoimg isoimg isoimg isoimg isoimg ."
+    ". link . . . . . isoimg isoimg isoimg isoimg isoimg isoimg ."
+    ". . . . . . . isoimg isoimg isoimg isoimg isoimg isoimg .";
+  }
+
+  .project-heading-black {
+    margin-top: 5.5rem;
+    text-align: left;
+    font-size: 6ch;
+    font-weight: bold;
+  }
+
+
+  .project-description-black {
+margin-top: 1rem;
+margin-bottom: 4rem;
+font-size: 2ch;
+  }
+
+  .volta-project {
+    margin-bottom: 9rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas: 
+    ". heading heading heading heading heading heading . . . . . . ."
+    ". description description description description description description . . . . . . ."
+    ". skills skills skills skills skills skills . . . . . . ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . isotheme isotheme isotheme isotheme . ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . isoname isoname isoname isoname isoname ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . project project project project project ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . link . . . . ."
+    ". isoimg isoimg isoimg isoimg isoimg isoimg . . . . . . .";
+  }
+
+  .video-projects {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 89.5%, 0% 100%);
+    margin-top: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 33rem;
+    margin-bottom: -12rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-areas: 
+    ". . . . . . . . heading heading heading heading heading ."
+    ". . . . . . . . description description description description description ."
+    ". . . . . . . . skills skills skills skills skills ."
+    ". fullofwar fullofwar fullofwar fullofwar fullofwar . . video video video video video .";
+  }
+
+  .video-heading {
+    margin-top: 3rem;
+    text-align: left;
+    font-size: 8ch;
+    font-weight: bold;  
+  }
+
+  .video-info {
+    font-size: 2.2ch;
+  }
+
+  .video-skills {
+    margin-top: 0.7rem;
+  }
+
+  .fullofwar {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+
+  .video-project {
+    margin-top: 5rem;
+    height: 30rem;
+  }
+
+/* portfolio end*/ 
+/*cv start*/
+
+
+/* cv end*/ 
+/*about start*/
+
+
+/* about end*/ 
+/*contact start*/
+
+
+/* contact end*/ 
+
+/* submit start*/ 
+/* submit end*/ 
+
+
+
+}
 
