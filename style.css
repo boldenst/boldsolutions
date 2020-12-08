@@ -552,12 +552,7 @@ footer {
   grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
-    ". zeal zeal zeal zeal ."
-    ". . isotheme isotheme . ."
-    ". isoname isoname isoname isoname ."
-    ". isoimg isoimg isoimg isoimg ."
-    ". project project project project ."
-    ". . link link . .";
+    ". zeal zeal zeal zeal .";
 }
 
 .cv-more h2 {
@@ -636,11 +631,23 @@ footer {
     ". counter counter counter counter ."
     ". more more more more .";
 }
+.abouthead {
+  justify-content: center;
+  display: flex;
+  grid-area: heading;
+}
+.behind {
+  font-weight: lighter;
+  margin-right: 0.6rem;
+}
+
+
+.bold {
+  font-weight: bolder;
+}
 
 .about h1 {
-  grid-area: heading;
   color: white;
-  text-align: center;
   font-size: 4.5ch;
 }
 
@@ -935,9 +942,9 @@ footer {
     display: flex;
     list-style: none;
     justify-content: space-evenly;
-    width: 35%;
+    width: 33%;
     position: absolute;
-    right: 3.2vw;
+    right: 5vw;
     top: 0.8rem;
   }
 
@@ -958,7 +965,7 @@ footer {
 
 
   .toplogo {
-    margin-left: 5vw;
+    margin-left: 7.5vw;
     width: 17rem;
     margin-top: 0.4rem;
   }
@@ -1254,6 +1261,102 @@ footer {
 
   /* portfolio end*/
   /*cv start*/
+  .experience {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    background-color: #0A0A0A;
+    margin-top: 3.5rem;
+    padding-top: 10rem;
+    padding-bottom: 75vh;
+    display: grid;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas:
+      ". . . . . heading heading heading heading . . . . ."
+      ". . . intro intro intro intro intro intro intro intro . . ."
+      ". . . . . more more more more . . . . .";
+  }
+
+  .experience h1 {
+    text-align: center;
+    font-size: 10ch;
+    letter-spacing: 0.05ch;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+  }
+
+  .experience p {
+    font-weight: 100;
+    font-size: 2.5ch;
+  }
+
+  .experience h3 {
+    margin-top: 9rem;
+    font-size: 4ch;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .cv-more {
+    margin-bottom: 17rem;
+    padding-top: 10rem;
+    padding-bottom: 33rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    display: grid;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas:
+      ". heading heading heading heading heading . . . . . . . ."
+      ". description description description description description description description description description description description description ."
+      ". zeal zeal zeal zeal zeal zeal zeal zeal zeal zeal zeal zeal .";
+  }
+  
+  .cv-more h2 {
+    font-size: 8ch;
+    text-align: left;
+    margin-top: 6rem;
+  }
+  
+  .koegegym {
+    font-size: 2.5ch;
+    margin-top: 2rem;
+  }
+  
+  .zealandacad {
+    font-size: 2.5ch;
+    margin-top: 1.5rem;
+  }
+
+  .cv-work {
+    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+    margin-top: 15rem;
+    padding-top: 20rem;
+    padding-bottom: 55rem;
+    margin-bottom: -8rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-areas:
+      ". . . . . . . . . . heading heading heading ."
+      ". . . . . . . webhelp webhelp webhelp webhelp webhelp webhelp ."
+      ". . . . . . . telia telia telia telia telia telia .";
+  }
+  
+  .cv-work h2 {
+    font-size: 8ch;
+    text-align: left;
+    margin-top: 6rem;
+  }
+  
+  .webhelp {
+    font-size: 2.5ch;
+    margin-top: 2rem;  
+    text-align: right;
+  }
+  
+  .telia {
+    font-size: 2.5ch;
+    margin-top: 1.5rem;  
+    text-align: right;
+
+  }
 
 
   /* cv end*/
