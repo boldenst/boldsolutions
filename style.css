@@ -1,191 +1,196 @@
 * {
-    padding: 0;
-    margin: 0;
-    /*Indsæt font her*/ 
-    font-family: centurygothic;
-    z-index: 100;
-    }
+  padding: 0;
+  margin: 0;
+  /*Indsæt font her*/
+  font-family: centurygothic;
+  z-index: 100;
+}
 
 @font-face {
-    font-family: centurygothic;
-    src: url(./fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
-  }
+  font-family: centurygothic;
+  src: url(./fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
+}
+
 /*Her styles headeren*/
-  header {
-      z-index: 200;
-      width: 100vw;
-      height: 3.5rem;
-      background-color: #0A0A0A;
-      position: fixed;
-      left: 0;
-      top: 0;
-      border-bottom: 2px solid #F58F4B;
-  }
+header {
+  z-index: 200;
+  width: 100vw;
+  height: 3.5rem;
+  background-color: #0A0A0A;
+  position: fixed;
+  left: 0;
+  top: 0;
+  border-bottom: 2px solid #F58F4B;
+}
 
-  header ul {
-    display: none;
-  }
+header ul {
+  display: none;
+}
 
-  .toplogo {
-      width: 13rem;
-      margin-top: 0.8rem;
-      margin-left: 1.75rem;
-  }
+.toplogo {
+  width: 13rem;
+  margin-top: 0.8rem;
+  margin-left: 1.75rem;
+}
 
 /* Menu lånt fra tidligere projekt men er modificeret*/
 
 
 .sidenav {
-    z-index: 250;
-    height: 100vh;
-    width: 0;
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #0A0A0A;
-    overflow-x: hidden;
-    transition: 0.4s;
-    padding-top: 60px;
-  }
-  
-  .sidenav a {
-    text-transform: uppercase;
-    letter-spacing: 0.35ch;
-    text-align: center;
-    padding: 1rem 1rem 1rem 1rem;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidenav .closebtn {
-    z-index: 250;
-    color: #F58F4B;
-    position: absolute;
-    top: -1.3rem;
-    right: -0.8rem;
-    font-size: 6ch;
-    
-  }
+  z-index: 250;
+  height: 100vh;
+  width: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #0A0A0A;
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  text-transform: uppercase;
+  letter-spacing: 0.35ch;
+  text-align: center;
+  padding: 1rem 1rem 1rem 1rem;
+  text-decoration: none;
+  font-size: 25px;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  z-index: 250;
+  color: #F58F4B;
+  position: absolute;
+  top: -1.3rem;
+  right: -0.8rem;
+  font-size: 6ch;
+
+}
 
 .burgerdiv {
   z-index: 0;
   position: absolute;
-    right: 0.7rem;
-    top: 0.9rem;
+  right: 0.7rem;
+  top: 0.9rem;
 }
 
 .burgerdiv div {
-    width: 1.8rem;
-    height: 2px;
-    margin: 0.37rem;
-    background-color: #F58F4B;    
+  width: 1.8rem;
+  height: 2px;
+  margin: 0.37rem;
+  background-color: #F58F4B;
 }
-  /*Menu end*/
+
+/*Menu end*/
 
 
-  /* Index Start */
+/* Index Start */
 
 
-  .landing-grid {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
-    background-color: #0A0A0A;
-    margin-top: 3.5rem;
-    padding-top: 10rem;
-    padding-bottom: 60vh;
-    display: grid;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.landing-grid {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+  background-color: #0A0A0A;
+  margin-top: 3.5rem;
+  padding-top: 10rem;
+  padding-bottom: 60vh;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". . text text . ."
     ". logo logo logo logo ."
     ". more more more more .";
-      }
+}
 
-  .landing-grid h2 {
-      color: white;
-      grid-area: text;
-      font-size: 1.4em;
-      font-weight: 100;
-      text-align: center;
-  }
+.landing-grid h2 {
+  color: white;
+  grid-area: text;
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: center;
+}
+
 .landing-grid img {
-    grid-area: logo;
-    width: 100%;
+  grid-area: logo;
+  width: 100%;
 }
 
 .landing-grid h3 {
-    margin-top: 9rem;
-    grid-area: more;
-    color: #F58F4B;
-    font-size: 2.5ch;
-    font-weight: lighter;
-    text-align: center;
+  margin-top: 9rem;
+  grid-area: more;
+  color: #F58F4B;
+  font-size: 2.5ch;
+  font-weight: lighter;
+  text-align: center;
 }
 
 
 /* Her styles pilen på siden, som er animeret til at pege ned ad, den indikerer at der er mere indhold længere nede på siden---------------------------------------------------------------------*/
-.scrolldown{
-	position: absolute;
-	top: 78vh;
-	margin-left: 50vw;	
-	width: 6rem;
-	height: 6rem;
-	transform: translateY(-80px) translateX(-50%) rotate(45deg);
+.scrolldown {
+  position: absolute;
+  top: 78vh;
+  margin-left: 50vw;
+  width: 6rem;
+  height: 6rem;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
 }
 
 .scrolldown span {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: block;
-	width: 100%;
-	height: 100%;
-	border-bottom: 2px solid white;
-	border-right: 2px solid white;
-	animation: animate 1.5s linear infinite;
-	opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
 }
 
-.scrolldown span:nth-child(1){
-	transform: translate(-15px,-15px);
-	animation-delay: 0.4s;
+.scrolldown span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: 0.4s;
 }
 
-.scrolldown span:nth-child(2){
-	transform: translate(0,0);
-	animation-delay: 0.2s;
+.scrolldown span:nth-child(2) {
+  transform: translate(0, 0);
+  animation-delay: 0.2s;
 }
 
-.scrolldown span:nth-child(3){
-	transform: translate(15px,15px);
- 	animation-delay: 0s;
+.scrolldown span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
 }
 
-@keyframes animate{
-	0%{
-	top: -5px;
-	left: -5px;
-	opacity: 0;
-	}
-	25%{
-	top: 0px;
-	left: 0px;
-	opacity: 1;
-	}
-	100%{
-	top: 5px;
-	left: 5px;
-	opacity: 0;
-	}
+@keyframes animate {
+  0% {
+    top: -5px;
+    left: -5px;
+    opacity: 0;
+  }
+
+  25% {
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+  }
+
+  100% {
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+  }
 }
 
 
@@ -196,12 +201,12 @@
   grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
   grid-template-rows: auto;
   column-gap: 0.5rem;
-  grid-template-areas: 
-  ". heading heading heading heading ."
-  ". description description description description ."
-  "setup setup setup setup setup setup"
-  ". . link link . .";
-    
+  grid-template-areas:
+    ". heading heading heading heading ."
+    ". description description description description ."
+    "setup setup setup setup setup setup"
+    ". . link link . .";
+
 
 }
 
@@ -209,7 +214,6 @@
   grid-area: heading;
   color: #0A0A0A;
   font-size: 4.2ch;
-  text-transform: capitalize;
   font-weight: bolder;
   margin-bottom: 0.5rem;
 }
@@ -220,9 +224,9 @@
 
 
 .setup-mobile {
-grid-area: setup;
-margin-top: 3rem;
-width: 100%;
+  grid-area: setup;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .setup-desktop {
@@ -236,13 +240,13 @@ width: 100%;
   text-transform: capitalize;
   color: #F58F4B;
   text-decoration: none;
-grid-area: link;
-width: 100%;
-border: 1px solid #0a0a0a;
-text-align: center;
-border-radius: 1rem;
-font-weight: 500;
-font-size: 2.5ch;
+  grid-area: link;
+  width: 100%;
+  border: 1px solid #0a0a0a;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 2.5ch;
 }
 
 .primary-link-black {
@@ -252,13 +256,13 @@ font-size: 2.5ch;
   text-transform: capitalize;
   color: #F58F4B;
   text-decoration: none;
-grid-area: link;
-width: 100%;
-border: 1px solid white;
-text-align: center;
-border-radius: 1rem;
-font-weight: 500;
-font-size: 2.5ch;
+  grid-area: link;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 2.5ch;
 }
 
 footer {
@@ -268,56 +272,56 @@ footer {
   height: 25rem;
 }
 
-    /* Index end */
-  /* Portfolio Start */
-  .portfolio-intro {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
-    background-color: #0A0A0A;
-    margin-top: 3.5rem;
-    padding-top: 7rem;
-    padding-bottom: 70vh;
-    display: grid;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+/* Index end */
+/* Portfolio Start */
+.portfolio-intro {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+  background-color: #0A0A0A;
+  margin-top: 3.5rem;
+  padding-top: 7rem;
+  padding-bottom: 70vh;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". . heading heading . ."
     ". intro intro intro intro ."
     ". more more more more .";
-      }
+}
 
-  .portfolio-intro h1 {
-     color: white;
-     grid-area: heading;
-     text-align: center;
-     font-size: 4ch;
-     font-weight: 100;
-    margin-bottom: 2rem;
-  }
+.portfolio-intro h1 {
+  color: white;
+  grid-area: heading;
+  text-align: center;
+  font-size: 4ch;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
 
-  .portfolio-intro p {
-    color: white;
-    grid-area: intro;
-    font-weight: 100;
-  }
+.portfolio-intro p {
+  color: white;
+  grid-area: intro;
+  font-weight: 100;
+}
 
-  .portfolio-intro h3 {
-    margin-top: 9rem;
-    grid-area: more;
-    color: #F58F4B;
-    font-size: 2.5ch;
-    font-weight: lighter;
-    text-align: center;
-  }
+.portfolio-intro h3 {
+  margin-top: 9rem;
+  grid-area: more;
+  color: #F58F4B;
+  font-size: 2.5ch;
+  font-weight: lighter;
+  text-align: center;
+}
 
-  .iso-project {
-    margin-top: 6rem;
-    margin-bottom: 9rem;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.iso-project {
+  margin-top: 6rem;
+  margin-bottom: 9rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
     ". skills skills skills skills ."
@@ -326,68 +330,67 @@ footer {
     ". isoimg isoimg isoimg isoimg ."
     ". project project project project ."
     ". . link link . .";
-  }
+}
 
-  .zealand-heading {
-    grid-area: heading;
-    color: #0a0a0a;
-    font-size: 3.6ch;
-    text-transform: capitalize;
-    font-weight: bolder;
-    margin-bottom: 0.5rem;
-  }
-  
-  .zealand-info {
-    grid-area: description;
-  }
+.zealand-heading {
+  grid-area: heading;
+  color: #0a0a0a;
+  font-size: 3.6ch;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
 
-  .bold-skills {
-    grid-area: skills;
-    margin-top: 0.8rem;
-    font-size: 1.2ch;
-    font-weight: bold;
-    color: #F58F4B;
-  }
+.zealand-info {
+  grid-area: description;
+}
 
-  .project-heading {
-    margin-top: 5.5rem;
-    grid-area: isotheme;
-    text-align: center;
-    font-size: 4ch;
-    font-weight: bold;
-  }
+.bold-skills {
+  grid-area: skills;
+  margin-top: 0.8rem;
+  font-size: 1.2ch;
+  font-weight: bold;
+  color: #F58F4B;
+}
 
-  .project-name {
+.project-heading {
+  margin-top: 5.5rem;
+  grid-area: isotheme;
+  text-align: center;
+  font-size: 4ch;
+  font-weight: bold;
+}
+
+.project-name {
   grid-area: isoname;
   text-align: center;
   color: #F58F4B;
-  }
+}
 
-  .project-description {
-grid-area: project;
-margin-top: 2rem;
-margin-bottom: 1rem;
-font-size: 1.4ch;
-  }
-  
-  
-  .projectspic {
+.project-description {
+  grid-area: project;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4ch;
+}
+
+
+.projectspic {
   grid-area: isoimg;
   margin-top: 1rem;
   width: 100%;
-  }
-  
-  .balletto-project {
-    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
-    background-color: #0a0a0a;
-    margin-top: 6rem;
-    padding-top: 9rem;
-    padding-bottom: 14rem;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+}
+
+.balletto-project {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
+  background-color: #0a0a0a;
+  margin-top: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 14rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
     ". skills skills skills skills ."
@@ -396,34 +399,34 @@ font-size: 1.4ch;
     ". isoimg isoimg isoimg isoimg ."
     ". project project project project ."
     ". . link link . .";
-  }
+}
 
-  .project-heading-black {
-    color: white;
-    margin-top: 5.5rem;
-    grid-area: isotheme;
-    text-align: center;
-    font-size: 4ch;
-    font-weight: bold;
-  }
+.project-heading-black {
+  color: white;
+  margin-top: 5.5rem;
+  grid-area: isotheme;
+  text-align: center;
+  font-size: 4ch;
+  font-weight: bold;
+}
 
 
-  .project-description-black {
-    color: white;
-grid-area: project;
-margin-top: 2rem;
-margin-bottom: 1rem;
-font-size: 1.4ch;
-  }
+.project-description-black {
+  color: white;
+  grid-area: project;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4ch;
+}
 
-  .volta-project {
-    margin-bottom: 9rem;
-    padding-bottom: 3rem;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.volta-project {
+  margin-bottom: 9rem;
+  padding-bottom: 3rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
     ". skills skills skills skills ."
@@ -432,121 +435,121 @@ font-size: 1.4ch;
     ". isoimg isoimg isoimg isoimg ."
     ". project project project project ."
     ". . link link . .";
-  }
+}
 
 
-  .video-projects {
-    clip-path: polygon(0% 10%, 100% 0%, 100% 89.5%, 0% 100%);
-    background-color: #0a0a0a;
-    margin-top: 6rem;
-    padding-top: 9rem;
-    padding-bottom: 18rem;
-    margin-bottom: -8rem;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.video-projects {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 89.5%, 0% 100%);
+  background-color: #0a0a0a;
+  margin-top: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 18rem;
+  margin-bottom: -8rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
     ". skills skills skills skills ."
     ". fullofwar fullofwar fullofwar fullofwar ."
     ". video video video video .";
-  }
+}
 
-  .video-heading {
-    grid-area: heading;
-    color: white;
-    margin-top: 5.5rem;
-    text-align: center;
-    font-size: 4ch;
-    font-weight: bold;  
-  }
+.video-heading {
+  grid-area: heading;
+  color: white;
+  margin-top: 5.5rem;
+  text-align: center;
+  font-size: 4ch;
+  font-weight: bold;
+}
 
-  .video-info {
-    grid-area: description;
-    color: white;
-  }
+.video-info {
+  grid-area: description;
+  color: white;
+}
 
-  .video-skills {
-    grid-area: skills;
-    color: #F58F4B;
-    margin-top: 0.7rem;
-  }
+.video-skills {
+  grid-area: skills;
+  color: #F58F4B;
+  margin-top: 0.7rem;
+}
 
-  .fullofwar {
-    grid-area: fullofwar;
-    margin-top: 5rem;
-    width: 100%;
-    height: 11rem;
-  }
+.fullofwar {
+  grid-area: fullofwar;
+  margin-top: 5rem;
+  width: 100%;
+  height: 11rem;
+}
 
-  .video-project {
-    grid-area: video;
-    margin-top: 5rem;
-    height: 11rem;
-    width: 100%;
-  }
-
-
+.video-project {
+  grid-area: video;
+  margin-top: 5rem;
+  height: 11rem;
+  width: 100%;
+}
 
 
 
-  
 
 
-  /* Portfolio end */
 
-  /* CV Start */
-  .experience {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
-    background-color: #0A0A0A;
-    margin-top: 3.5rem;
-    padding-top: 7rem;
-    padding-bottom: 70vh;
-    display: grid;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+
+
+/* Portfolio end */
+
+/* CV Start */
+.experience {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+  background-color: #0A0A0A;
+  margin-top: 3.5rem;
+  padding-top: 7rem;
+  padding-bottom: 70vh;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". . heading heading . ."
     ". intro intro intro intro ."
     ". more more more more .";
-      }
+}
 
-  .experience h1 {
-     color: white;
-     grid-area: heading;
-     text-align: center;
-     font-size: 4ch;
-     font-weight: 100;
-    margin-bottom: 2rem;
-  }
+.experience h1 {
+  color: white;
+  grid-area: heading;
+  text-align: center;
+  font-size: 4ch;
+  font-weight: 100;
+  margin-bottom: 2rem;
+}
 
-  .experience p {
-    color: white;
-    grid-area: intro;
-    font-weight: 100;
-  }
+.experience p {
+  color: white;
+  grid-area: intro;
+  font-weight: 100;
+}
 
-  .experience h3 {
-    margin-top: 9rem;
-    grid-area: more;
-    color: #F58F4B;
-    font-size: 2.5ch;
-    font-weight: lighter;
-    text-align: center;
-  }
+.experience h3 {
+  margin-top: 9rem;
+  grid-area: more;
+  color: #F58F4B;
+  font-size: 2.5ch;
+  font-weight: lighter;
+  text-align: center;
+}
 
-  .cv-more {
-    margin-bottom: 9rem;
-    padding-top: 5rem;
-    padding-bottom: 20rem;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.cv-more {
+  margin-bottom: 9rem;
+  padding-top: 5rem;
+  padding-bottom: 20rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
     ". zeal zeal zeal zeal ."
@@ -555,76 +558,76 @@ font-size: 1.4ch;
     ". isoimg isoimg isoimg isoimg ."
     ". project project project project ."
     ". . link link . .";
-  }
+}
 
-  .cv-more h2 {
-    grid-area: heading;
-    text-align: center;
-    margin-top: 5rem;
-  }
+.cv-more h2 {
+  grid-area: heading;
+  text-align: center;
+  margin-top: 5rem;
+}
 
-  .koegegym {
-    grid-area: description;
-    margin-top: 2rem;
-  }
+.koegegym {
+  grid-area: description;
+  margin-top: 2rem;
+}
 
-  .zealandacad {
-    grid-area: zeal;
-    margin-top: 1rem;
-  }
+.zealandacad {
+  grid-area: zeal;
+  margin-top: 1rem;
+}
 
-  .cv-work {
-    clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
-    background-color: #0a0a0a;
-    margin-top: 6rem;
-    padding-top: 9rem;
-    padding-bottom: 40rem;
-    margin-bottom: -8rem;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.cv-work {
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #0a0a0a;
+  margin-top: 6rem;
+  padding-top: 9rem;
+  padding-bottom: 40rem;
+  margin-bottom: -8rem;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". webhelp webhelp webhelp webhelp ."
     ". telia telia telia telia .";
-  }
+}
 
-  .cv-work h2 {
-    color: white;
-    grid-area: heading;
-    text-align: center;
-    margin-top: 5rem;
-    text-transform: capitalize;
-  }
+.cv-work h2 {
+  color: white;
+  grid-area: heading;
+  text-align: center;
+  margin-top: 5rem;
+  text-transform: capitalize;
+}
 
-  .webhelp {
-    color: white;
-    grid-area: webhelp;
-    margin-top: 2rem;
-  }
+.webhelp {
+  color: white;
+  grid-area: webhelp;
+  margin-top: 2rem;
+}
 
-  .telia {
-    color: white;
-    grid-area: telia;
-    margin-top: 1rem;
-  }
+.telia {
+  color: white;
+  grid-area: telia;
+  margin-top: 1rem;
+}
 
-  /* CV end */
+/* CV end */
 
-  /* About Start */
+/* About Start */
 
-  .about {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
-    margin-top: 3.5rem;
-    padding-top: 3rem;
-    padding-bottom: 24rem;
-    background-color: #0a0a0a;
-    display: grid;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.about {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+  margin-top: 3.5rem;
+  padding-top: 3rem;
+  padding-bottom: 24rem;
+  background-color: #0a0a0a;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". . mypic mypic . ."
     ". name name name name ."
@@ -632,7 +635,7 @@ font-size: 1.4ch;
     ". where where where where ."
     ". counter counter counter counter ."
     ". more more more more .";
-  }
+}
 
 .about h1 {
   grid-area: heading;
@@ -647,6 +650,7 @@ font-size: 1.4ch;
   width: 100%;
   margin-bottom: 3rem;
 }
+
 .name {
   grid-area: name;
   color: white;
@@ -659,162 +663,169 @@ font-size: 1.4ch;
   font-size: 1.5ch;
 
 }
-  .about-description { 
-    color: white;
-    font-size: 1.5ch;
-  }
 
-  #daybox {
-    color: #F58F4B;
-    grid-area: counter;
-    margin-left: 0.3rem;
-    font-size: 1.5ch;
+.about-description {
+  color: white;
+  font-size: 1.5ch;
+}
 
-  }
-  .age {
-    grid-area: age;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
+#daybox {
+  color: #F58F4B;
+  grid-area: counter;
+  margin-left: 0.3rem;
+  font-size: 1.5ch;
 
-  .year {
-    color: #F58F4B;
-    font-size: 1.5ch;
-    margin-right: 0.2rem;
+}
 
-  }
+.age {
+  grid-area: age;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
 
-  .about h2 {
-    margin-top: 3rem;
-    grid-area: more;
-    font-size: 3ch;
-    font-weight: normal;
-    color: #F58F4B;
-    text-align: center;
-  }
-  .about-more {
-    margin-top: 9rem;
-    margin-bottom: 9rem;
-    display: grid;
-    grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
-    grid-template-areas: 
+.year {
+  color: #F58F4B;
+  font-size: 1.5ch;
+  margin-right: 0.2rem;
+
+}
+
+.about h2 {
+  margin-top: 3rem;
+  grid-area: more;
+  font-size: 3ch;
+  font-weight: normal;
+  color: #F58F4B;
+  text-align: center;
+}
+
+.about-more {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
     ". heading heading heading heading ."
     ". description description description description ."
     "setup setup setup setup setup setup"
     ". . link link . .";
-  }
-  .about-more h2 {
-    grid-area: heading;
-    color: #0A0A0A;
-    font-size: 4.8ch;
-    font-weight: bolder;
-    margin-bottom: 0.5rem;
-  }
-  
-  .about-more p {
-    grid-area: description;
-    font-size: 1.6ch;
-  }
-  
-  
-  .about-more img {
+}
+
+.about-more h2 {
+  grid-area: heading;
+  color: #0A0A0A;
+  font-size: 4.8ch;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.about-more p {
+  grid-area: description;
+  font-size: 1.6ch;
+}
+
+
+.about-more img {
   grid-area: setup;
   margin-top: 3rem;
   width: 100%;
-  }
-  /* About end */
-  /* Contact Start */  
-  .contact {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
+}
 
-      background-color: #0A0A0A;
-      margin-top: 3.5rem;
-      padding-top: 5rem;
-      padding-bottom: 60vh;
-      display: grid;
-      grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-      grid-template-rows: auto;
-      column-gap: 0.5rem;
-      grid-template-areas: 
-      ". . heading heading . ."
-      ". info info info info ."
-      ". more more more more ."
-      ". write write write write ."
-      ". form form form form .";
-      margin-bottom: -14rem;
-  }
+/* About end */
+/* Contact Start */
+.contact {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
 
-  .contact-heading {
-    color: white;
-    grid-area: heading;
-    text-align: center;
-    font-size: 4ch;
-  }
-  .contact-description {
-    color: white;
-    grid-area: info;
-    margin-top: 4rem;
-  }
+  background-color: #0A0A0A;
+  margin-top: 3.5rem;
+  padding-top: 5rem;
+  padding-bottom: 60vh;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    ". . heading heading . ."
+    ". info info info info ."
+    ". more more more more ."
+    ". write write write write ."
+    ". form form form form .";
+  margin-bottom: -14rem;
+}
 
-  .contact-me {
-    color: #F58F4B;
-    grid-area: more;
-    text-align: center;
-    font-weight: lighter;
-    padding-top: 5.5rem;
-    font-size: 3ch;
-  }
+.contact-heading {
+  color: white;
+  grid-area: heading;
+  text-align: center;
+  font-size: 4ch;
+}
 
-  .write {
-    color: white;
-    grid-area: write;
-    text-align: center;
-    margin-top: 30rem;
-    font-size: 4.4ch;
-    font-weight: lighter;
-  }
+.contact-description {
+  color: white;
+  grid-area: info;
+  margin-top: 4rem;
+}
 
-  .contact-form {
-    grid-area: form;
-    margin-top: 5rem;
-    color: white;
-  }
+.contact-me {
+  color: #F58F4B;
+  grid-area: more;
+  text-align: center;
+  font-weight: lighter;
+  padding-top: 5.5rem;
+  font-size: 3ch;
+}
 
-  .contact-form input {
-    width: 100%;
-    border-radius: 0.4rem;
-    padding-top: 0.3rem;
-    padding-bottom: 0.3rem;
-    margin-bottom: 1rem;
-    border: none;
-  }
-  .contact-form textarea {
-    width: 100%;
-    text-decoration: none;
-    border-radius: 0.4rem;
-    padding-top: 0rem;
-    padding-bottom: 5rem;
-    border: none;
-    resize: none;
-    
-  }
+.write {
+  color: white;
+  grid-area: write;
+  text-align: center;
+  margin-top: 30rem;
+  font-size: 4.4ch;
+  font-weight: lighter;
+}
 
-  .contact-form p {
-    color: #F58F4B;
-    margin-bottom: 0.3rem;
-  }
+.contact-form {
+  grid-area: form;
+  margin-top: 5rem;
+  color: white;
+}
 
-  .contact-form button {
-    margin-top: 1rem;
-    background-color: #0a0a0a;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    text-transform: capitalize;
-    color: #F58F4B;
-    text-decoration: none;
+.contact-form input {
+  width: 100%;
+  border-radius: 0.4rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.contact-form textarea {
+  width: 100%;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  padding-top: 0rem;
+  padding-bottom: 5rem;
+  border: none;
+  resize: none;
+
+}
+
+.contact-form p {
+  color: #F58F4B;
+  margin-bottom: 0.3rem;
+}
+
+.contact-form button {
+  margin-top: 1rem;
+  background-color: #0a0a0a;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  text-transform: capitalize;
+  color: #F58F4B;
+  text-decoration: none;
   width: 100%;
   border: 1px solid white;
   text-align: center;
@@ -822,48 +833,48 @@ font-size: 1.4ch;
   font-weight: 500;
   font-size: 1.9ch;
 
-  }
+}
 
-  .scrolldown-contact{
-    position: absolute;
-    top: 78vh;
-    margin-left: 50vw;	
-    width: 6rem;
-    height: 6rem;
-    transform: translateY(-80px) translateX(-50%) rotate(45deg);
-  }
-  
-  .scrolldown-contact span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 100%;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
-    animation: animate 1.5s linear infinite;
-    opacity: 0;
-  }
-  
-  .scrolldown-contact span:nth-child(1){
-    transform: translate(-15px,-15px);
-    animation-delay: 0.4s;
-  }
-  
-  .scrolldown-contact span:nth-child(2){
-    transform: translate(0,0);
-    animation-delay: 0.2s;
-  }
-  
-  .scrolldown-contact span:nth-child(3){
-    transform: translate(15px,15px);
-     animation-delay: 0s;
-  }
-  
-  /* Contact end */
+.scrolldown-contact {
+  position: absolute;
+  top: 78vh;
+  margin-left: 50vw;
+  width: 6rem;
+  height: 6rem;
+  transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
 
-  /* Submit start*/ 
+.scrolldown-contact span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  animation: animate 1.5s linear infinite;
+  opacity: 0;
+}
+
+.scrolldown-contact span:nth-child(1) {
+  transform: translate(-15px, -15px);
+  animation-delay: 0.4s;
+}
+
+.scrolldown-contact span:nth-child(2) {
+  transform: translate(0, 0);
+  animation-delay: 0.2s;
+}
+
+.scrolldown-contact span:nth-child(3) {
+  transform: translate(15px, 15px);
+  animation-delay: 0s;
+}
+
+/* Contact end */
+
+/* Submit start*/
 .submitted {
   background-color: #0A0A0A;
   height: 60vh;
@@ -873,241 +884,253 @@ font-size: 1.4ch;
   row-gap: 1rem;
   grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
   grid-template-rows: auto;
-  grid-template-areas: 
-  ". thanks thanks thanks thanks ."
-  ". . back back . .";
+  grid-template-areas:
+    ". thanks thanks thanks thanks ."
+    ". . back back . .";
 
 }
+
 .submitted p {
   color: white;
   text-align: center;
   grid-area: thanks;
   font-size: 1.7ch;
 }
+
 .submitted a {
   grid-area: back;
-align-self: center;  
-padding-top: 0.7rem;
+  align-self: center;
+  padding-top: 0.7rem;
   margin-bottom: 40vh;
   padding-bottom: 0.7rem;
   text-transform: capitalize;
   color: #F58F4B;
   text-decoration: none;
-width: 100%;
-border: 1px solid white;
-text-align: center;
-border-radius: 1rem;
-font-weight: 500;
-font-size: 1.7ch;
+  width: 100%;
+  border: 1px solid white;
+  text-align: center;
+  border-radius: 1rem;
+  font-weight: 500;
+  font-size: 1.7ch;
 }
 
 
-  /* Submit end*/ 
+/* Submit end*/
 
-  /*Styles til desktop*/
+/*Styles til desktop*/
 
 @media only screen and (min-width: 1368px) {
-/*Universelt*/
-.burgerdiv {
-  display: none;
-}
 
-header {
-  display: flex;
-  flex-direction: row;
-}
+  /*Universelt*/
+  .burgerdiv {
+    display: none;
+  }
 
-header ul {
-  display: flex;
-  list-style: none;
-  justify-content: space-evenly;
-  width: 35%;
-  position: absolute;
-  right: 3.2vw;
-  top: 0.8rem;
-}
+  header {
+    display: flex;
+    flex-direction: row;
+  }
 
-header ul li {
-font-size: 2.7ch;
-font-weight: lighter;
-}
+  header ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 35%;
+    position: absolute;
+    right: 3.2vw;
+    top: 0.8rem;
+  }
 
-header ul li a {
-text-decoration: none;
-color: white;
-}
+  header ul li {
+    font-size: 2.7ch;
+    font-weight: lighter;
+  }
 
-header ul li a:hover {
-  color: #F58F4B;
+  header ul li a {
+    text-decoration: none;
+    color: white;
+  }
+
+  header ul li a:hover {
+    color: #F58F4B;
   }
 
 
 
-.toplogo {
-margin-left: 5vw;
-width: 17rem;
-margin-top: 0.4rem;
-}
-.scrolldown{
-	position: absolute;
-	top: 73vh;
-	margin-left: 50vw;	
-	width: 6rem;
-	height: 6rem;
-	transform: translateY(-80px) translateX(-50%) rotate(45deg);
-}
+  .toplogo {
+    margin-left: 5vw;
+    width: 17rem;
+    margin-top: 0.4rem;
+  }
 
-/*forside start*/
-.landing-grid {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-  padding-top: 13rem;
-  padding-bottom: 70vh;
-  grid-template-columns: 10vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10vw;
-  grid-template-areas: 
-  ". . text text text text text text text text text text . ."
-  ". . . logo logo logo logo logo logo logo logo . . ."
-  ". more more more more more more more more more more more more .";
-    }
+  .scrolldown {
+    position: absolute;
+    top: 73vh;
+    margin-left: 50vw;
+    width: 6rem;
+    height: 6rem;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+  }
 
-.landing-grid h2 {
+  body {
+    overflow-x: hidden;
+  }
+
+  footer {
+    width: 100vw;
+  }
+
+  /*forside start*/
+  .landing-grid {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    padding-top: 13rem;
+    padding-bottom: 70vh;
+    grid-template-columns: 10vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 10vw;
+    grid-template-areas:
+      ". . text text text text text text text text text text . ."
+      ". . . logo logo logo logo logo logo logo logo . . ."
+      ". more more more more more more more more more more more more .";
+  }
+
+  .landing-grid h2 {
     font-size: 5ch;
     font-weight: 100;
-}
-
-
-.landing-grid h3 {
-  margin-top: 5rem;
-  font-size: 3ch;
-  font-weight: lighter;
-}
-
-.solutions-grid {
-  margin-top: 9rem;
-  margin-bottom: 9rem;
-  padding-bottom: 10rem;
-  padding-top: 10rem;
-  display: grid;
-  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-  grid-template-rows: auto;
-  column-gap: 0.5rem;
-  grid-template-areas: 
-  ". setup setup setup setup setup . heading heading heading heading heading heading ."
-  ". setup setup setup setup setup . description description description description description description ."
-  ". setup setup setup setup setup . . . link link . . .";
-    
-
-}
-
-.solutions-grid h2 {
-  grid-area: heading;
-  color: #0A0A0A;
-  font-size: 9ch;
-  letter-spacing: 0.07ch;
-  text-transform: capitalize;
-  font-weight: bolder;
-  margin-top: 3rem;
-align-self: center 0;}
-
-.solutions-grid p {
-  grid-area: description;
-  font-size: 2.5ch;
-  margin-bottom: 12rem;
-}
-
-
-.setup-desktop {
-  display: block;
-  grid-area: setup;
-  margin-top: 3rem;
-  width: 100%;
   }
-  
+
+
+  .landing-grid h3 {
+    margin-top: 5rem;
+    font-size: 3ch;
+    font-weight: lighter;
+  }
+
+  .solutions-grid {
+    margin-top: 9rem;
+    margin-bottom: 9rem;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+    display: grid;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas:
+      ". setup setup setup setup setup . heading heading heading heading heading heading ."
+      ". setup setup setup setup setup . description description description description description description ."
+      ". setup setup setup setup setup . . . link link . . .";
+
+
+  }
+
+  .solutions-grid h2 {
+    grid-area: heading;
+    color: #0A0A0A;
+    font-size: 9ch;
+    letter-spacing: 0.07ch;
+    font-weight: bolder;
+    margin-top: 3rem;
+    align-self: center 0;
+  }
+
+  .solutions-grid p {
+    grid-area: description;
+    font-size: 2.5ch;
+    margin-bottom: 12rem;
+  }
+
+
+  .setup-desktop {
+    display: block;
+    grid-area: setup;
+    margin-top: 3rem;
+    width: 100%;
+  }
+
   .setup-mobile {
     display: none;
   }
 
-.primary-link {
-  height: 2rem;
-font-size: 3ch;
-border-width: 2px;
-}
-
-.primary-link:hover {
-background-color: #F58F4B;
-color: white;
-border: #F58F4B;
-}
-
-.primary-link-black:hover {
-  background-color: #F58F4B;
-  color: white;
-  border: #F58F4B;
+  .primary-link {
+    height: 2rem;
+    font-size: 3ch;
+    border-width: 2px;
   }
 
-/* Forside end*/ 
-/*portfolio start*/
-.portfolio-intro {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-  background-color: #0A0A0A;
-  margin-top: 3.5rem;
-  padding-top: 10rem;
-  padding-bottom: 70vh;
-  display: grid;
-  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-  grid-template-rows: auto;
-  column-gap: 0.5rem;
-  grid-template-areas: 
-  ". . . . . heading heading heading heading . . . . ."
-  ". . . intro intro intro intro intro intro intro intro . . ."
-  ". . . . . more more more more . . . . .";
-    }
+  .primary-link:hover {
+    background-color: #F58F4B;
+    color: white;
+    border: #F58F4B;
+  }
 
-    .portfolio-intro h1 {
-      text-align: center;
-      font-size: 10ch;
-      letter-spacing: 0.05ch;
-      font-weight: lighter;
-     margin-bottom: 2rem;
-   }
- 
-   .portfolio-intro p {
+  .primary-link-black:hover {
+    background-color: #F58F4B;
+    color: white;
+    border: #F58F4B;
+  }
 
-     font-weight: 100;
-     font-size: 2.5ch;
-   }
- 
-   .portfolio-intro h3 {
-     margin-top: 9rem;
+  /* Forside end*/
+  /*portfolio start*/
+  .portfolio-intro {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    background-color: #0A0A0A;
+    margin-top: 3.5rem;
+    padding-top: 10rem;
+    padding-bottom: 70vh;
+    display: grid;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas:
+      ". . . . . heading heading heading heading . . . . ."
+      ". . . intro intro intro intro intro intro intro intro . . ."
+      ". . . . . more more more more . . . . .";
+  }
 
-     font-size: 4ch;
-     font-weight: lighter;
-     text-align: center;
-   }
+  .portfolio-intro h1 {
+    text-align: center;
+    font-size: 10ch;
+    letter-spacing: 0.05ch;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+  }
 
-   .iso-project {
-    margin-top: 6rem;
-    margin-bottom: 9rem;
+  .portfolio-intro p {
+
+    font-weight: 100;
+    font-size: 2.5ch;
+  }
+
+  .portfolio-intro h3 {
+    margin-top: 9rem;
+
+    font-size: 4ch;
+    font-weight: lighter;
+    text-align: center;
+  }
+
+  .iso-project {
+    margin-top: 9rem;
+    margin-bottom: 10rem;
     grid-area: solutions;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     display: grid;
     grid-template-rows: auto;
     column-gap: 0.5rem;
-    grid-template-areas: 
-    ". heading heading heading heading heading heading . . . . . . ."
-    ". description description description description description description . . . . . . ."
-    ". skills skills skills skills skills skills . . . . . . ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . isotheme isotheme isotheme isotheme . ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . isoname isoname isoname isoname isoname ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . project project project project project ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . link . . . . ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . . . . . . .";
+    grid-template-areas:
+      ". heading heading heading heading heading heading . . . . . . ."
+      ". description description description description description description . . . . . . ."
+      ". skills skills skills skills skills skills . . . . . . ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . isotheme isotheme isotheme isotheme . ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . isoname isoname isoname isoname isoname ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . project project project project project ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . link . . . . ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . . . . . . .";
   }
 
   .zealand-heading {
     font-size: 8.5ch;
     margin-bottom: 0.5rem;
   }
-  
+
   .zealand-info {
     font-size: 2.2ch;
   }
@@ -1127,34 +1150,34 @@ border: #F58F4B;
   }
 
   .project-name {
-  text-align: left;
-  font-size: 3ch;
+    text-align: left;
+    font-size: 3ch;
   }
 
   .project-description {
-margin-top: 1rem;
-margin-bottom: 4rem;
-font-size: 2ch;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 2ch;
   }
-  
-  
+
+
   .projectspic {
-  margin-top: 0;
+    margin-top: 0;
   }
 
 
   .balletto-project {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
     margin-top: 6rem;
-    padding-top: 22rem;
-    padding-bottom: 22rem;
+    padding-top: 25rem;
+    padding-bottom: 26rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-areas: 
-    ". isotheme isotheme isotheme isotheme isotheme . isoimg isoimg isoimg isoimg isoimg isoimg ."
-    ". isoname isoname isoname isoname isoname . isoimg isoimg isoimg isoimg isoimg isoimg ."
-    ". project project project project project . isoimg isoimg isoimg isoimg isoimg isoimg ."
-    ". link . . . . . isoimg isoimg isoimg isoimg isoimg isoimg ."
-    ". . . . . . . isoimg isoimg isoimg isoimg isoimg isoimg .";
+    grid-template-areas:
+      ". isotheme isotheme isotheme isotheme isotheme . isoimg isoimg isoimg isoimg isoimg isoimg ."
+      ". isoname isoname isoname isoname isoname . isoimg isoimg isoimg isoimg isoimg isoimg ."
+      ". project project project project project . isoimg isoimg isoimg isoimg isoimg isoimg ."
+      ". link . . . . . isoimg isoimg isoimg isoimg isoimg isoimg ."
+      ". . . . . . . isoimg isoimg isoimg isoimg isoimg isoimg .";
   }
 
   .project-heading-black {
@@ -1166,49 +1189,49 @@ font-size: 2ch;
 
 
   .project-description-black {
-margin-top: 1rem;
-margin-bottom: 4rem;
-font-size: 2ch;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: 2ch;
   }
 
   .volta-project {
     margin-bottom: 9rem;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     display: grid;
     grid-template-rows: auto;
     column-gap: 0.5rem;
-    grid-template-areas: 
-    ". heading heading heading heading heading heading . . . . . . ."
-    ". description description description description description description . . . . . . ."
-    ". skills skills skills skills skills skills . . . . . . ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . isotheme isotheme isotheme isotheme . ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . isoname isoname isoname isoname isoname ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . project project project project project ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . link . . . . ."
-    ". isoimg isoimg isoimg isoimg isoimg isoimg . . . . . . .";
+    grid-template-areas:
+      ". heading heading heading heading heading heading . . . . . . ."
+      ". description description description description description description . . . . . . ."
+      ". skills skills skills skills skills skills . . . . . . ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . isotheme isotheme isotheme isotheme . ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . isoname isoname isoname isoname isoname ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . project project project project project ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . link . . . . ."
+      ". isoimg isoimg isoimg isoimg isoimg isoimg . . . . . . .";
   }
 
   .video-projects {
     clip-path: polygon(0% 10%, 100% 0%, 100% 89.5%, 0% 100%);
     margin-top: 6rem;
-    padding-top: 15rem;
+    padding-top: 20rem;
     padding-bottom: 33rem;
     margin-bottom: -12rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-areas: 
-    ". . . . . . . . heading heading heading heading heading ."
-    ". . . . . . . . description description description description description ."
-    ". . . . . . . . skills skills skills skills skills ."
-    ". fullofwar fullofwar fullofwar fullofwar fullofwar . . video video video video video .";
+    grid-template-areas:
+      ". . . . . . . . heading heading heading heading heading ."
+      ". . . . . . . . description description description description description ."
+      ". . . . . . . . skills skills skills skills skills ."
+      ". fullofwar fullofwar fullofwar fullofwar fullofwar . . video video video video video .";
   }
 
   .video-heading {
     margin-top: 3rem;
     text-align: left;
     font-size: 8ch;
-    font-weight: bold;  
+    font-weight: bold;
   }
 
   .video-info {
@@ -1229,231 +1252,240 @@ font-size: 2ch;
     height: 30rem;
   }
 
-/* portfolio end*/ 
-/*cv start*/
+  /* portfolio end*/
+  /*cv start*/
 
 
-/* cv end*/ 
-/*about start*/
-.about {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-  margin-top: 3.5rem;
-  padding-top: 3rem;
-  padding-bottom: 40rem;
-  row-gap: 1rem;
-  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-  grid-template-areas: 
-  ". . . . heading heading heading heading heading heading . . . ."
-  ". mypic mypic . name name name name . . . . . ."
-  ". mypic mypic . age age age age . . . . . ."
-  ". mypic mypic . where where where where . . . . . ."
-  ". mypic mypic . . . . . . . . . . ."
-  ". . . . . more more more more . . . . .";
-}
+  /* cv end*/
+  /*about start*/
+  .about {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    margin-top: 3.5rem;
+    padding-top: 3rem;
+    padding-bottom: 40rem;
+    row-gap: 1rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-areas:
+      ". . . . heading heading heading heading heading heading . . . ."
+      ". mypic mypic . name name name name . . . . . ."
+      ". mypic mypic . age age age age . . . . . ."
+      ". mypic mypic . where where where where . . . . . ."
+      ". mypic mypic . . . . . . . . . . ."
+      ". . . . . more more more more . . . . .";
+  }
 
-.about h1 {
-text-align: center;
-font-size: 8ch;
-margin-bottom: 6rem;
-}
+  .about h1 {
+    text-align: center;
+    font-size: 8ch;
+    margin-bottom: 6rem;
+  }
 
-.about img {
-margin-top: 0;
-margin-bottom: 3rem;
-}
-.name {
-font-size: 2.5ch;
-}
+  .about img {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
 
-.where {
-font-size: 2.5ch;
+  .name {
+    font-size: 2.5ch;
+  }
 
-}
-.about-description { 
-  font-size: 2.5ch;
-}
+  .where {
+    font-size: 2.5ch;
 
-#daybox {
-  margin-left: 0.3rem;
-  font-size: 2.5ch;
+  }
 
-}
-.age {
-  grid-area: age;
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
+  .about-description {
+    font-size: 2.5ch;
+  }
 
-.year {
-  color: #F58F4B;
-  font-size: 2.5ch;
-  margin-right: 0.2rem;
+  #daybox {
+    margin-left: 0.3rem;
+    font-size: 2.5ch;
 
-}
+  }
 
-.about h2 {
-  margin-top: 0.;
-  grid-area: more;
-  font-size: 3ch;
-  font-weight: normal;
-  color: #F58F4B;
-  text-align: center;
-}
-.about-more {
-  margin-top: 25rem;
-  margin-bottom: 25rem;
-  display: grid;
-  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-  grid-template-rows: auto;
-  column-gap: 0.5rem;
-  grid-template-areas: 
-  ". heading heading heading heading heading heading . . setup setup setup setup ."
-  ". description description description description description description . . setup setup setup setup .";
-}
-.about-more h2 {
-  grid-area: heading;
-  color: #0A0A0A;
-  font-size: 8ch;
-  font-weight: bolder;
-  margin-bottom: 0.5rem;
-}
+  .age {
+    grid-area: age;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
 
-.about-more p {
-  grid-area: description;
-  font-size: 2ch;
-}
+  .year {
+    color: #F58F4B;
+    font-size: 2.5ch;
+    margin-right: 0.2rem;
+
+  }
+
+  .about h2 {
+    margin-top: 0.;
+    grid-area: more;
+    font-size: 3ch;
+    font-weight: normal;
+    color: #F58F4B;
+    text-align: center;
+  }
+
+  .about-more {
+    margin-top: 25rem;
+    margin-bottom: 25rem;
+    display: grid;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    grid-template-areas:
+      ". heading heading heading heading heading heading . . setup setup setup setup ."
+      ". description description description description description description . . setup setup setup setup .";
+  }
+
+  .about-more h2 {
+    grid-area: heading;
+    color: #0A0A0A;
+    font-size: 8ch;
+    font-weight: bolder;
+    margin-bottom: 0.5rem;
+  }
+
+  .about-more p {
+    grid-area: description;
+    font-size: 2ch;
+  }
 
 
-.about-more img {
-grid-area: setup;
-margin-top: 0;
-width: 100%;
-}
+  .about-more img {
+    grid-area: setup;
+    margin-top: 0;
+    width: 100%;
+  }
 
-/* about end*/ 
-/*contact start*/
-.contact {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
+  /* about end*/
+  /*contact start*/
+  .contact {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
 
     margin-top: 3.5rem;
     padding-top: 14rem;
     padding-bottom: 60vh;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     column-gap: 0.5rem;
-    grid-template-areas: 
-    ". heading heading heading . . . . form form form form . ."
-    ". info info info info info . . form form form form . ."
-    ". so-me so-me so-me so-me so-me . . form form form form . ."
-    ". . . . . . . . form form form form . .";
+    grid-template-areas:
+      ". heading heading heading . . . . form form form form . ."
+      ". info info info info info . . form form form form . ."
+      ". so-me so-me so-me so-me so-me . . form form form form . ."
+      ". . . . . . . . form form form form . .";
     margin-bottom: -14rem;
+  }
+
+  .contact-heading {
+    text-align: left;
+    font-size: 6ch;
+  }
+
+  .contact-description {
+    margin-top: 4rem;
+  }
+
+  .contact-me {
+    display: none;
+  }
+
+  .write {
+    display: none;
+  }
+
+  .contact-form {
+    margin-top: 0;
+  }
+
+  .contact-form input {
+    width: 100%;
+    border-radius: 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+  }
+
+  .contact-form textarea {
+    width: 100%;
+    text-decoration: none;
+    border-radius: 0.4rem;
+    padding-top: 0rem;
+    padding-bottom: 10rem;
+    border: none;
+
+  }
+
+  .contact-form p {
+    margin-bottom: 0.3rem;
+  }
+
+  .contact-form button {
+    margin-top: 1rem;
+    background-color: #0a0a0a;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    text-transform: capitalize;
+    color: #F58F4B;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 0.7rem;
+    font-weight: 500;
+    font-size: 1.9ch;
+
+  }
+
+  .scrolldown-contact {
+    display: none;
+  }
+
+  /* contact end*/
+
+  /* submit start*/
+  .submitted {
+    background-color: #0A0A0A;
+    height: 60vh;
+    padding-top: 40vh;
+    width: 100%;
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks ."
+      ". . . . . . back back . . . . . .";
+
+  }
+
+  .submitted p {
+    color: white;
+    text-align: center;
+    grid-area: thanks;
+    font-size: 3.5ch;
+  }
+
+  .submitted a {
+    grid-area: back;
+    align-self: center;
+    padding-top: 0.7rem;
+    margin-bottom: 40vh;
+    padding-bottom: 0.7rem;
+    text-transform: capitalize;
+    color: #F58F4B;
+    text-decoration: none;
+    width: 100%;
+    border: 1px solid white;
+    text-align: center;
+    border-radius: 1rem;
+    font-weight: 500;
+    font-size: 1.7ch;
+  }
+
+  /* submit end*/
+
+
+
 }
-
-.contact-heading {
-  text-align: left;
-  font-size: 6ch;
-}
-.contact-description {
-  margin-top: 4rem;
-}
-
-.contact-me {
-display: none;
-}
-
-.write {
-display: none;
-}
-
-.contact-form {
-  margin-top: 0;
-}
-
-.contact-form input {
-  width: 100%;
-  border-radius: 0.4rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  border: none;
-}
-.contact-form textarea {
-  width: 100%;
-  text-decoration: none;
-  border-radius: 0.4rem;
-  padding-top: 0rem;
-  padding-bottom: 10rem;
-  border: none;
-  
-}
-
-.contact-form p {
-  margin-bottom: 0.3rem;
-}
-
-.contact-form button {
-  margin-top: 1rem;
-  background-color: #0a0a0a;
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-  text-transform: capitalize;
-  color: #F58F4B;
-  text-decoration: none;
-width: 100%;
-border: 1px solid white;
-text-align: center;
-border-radius: 0.7rem;
-font-weight: 500;
-font-size: 1.9ch;
-
-}
-
-.scrolldown-contact {
-  display: none;
-}
-
-/* contact end*/ 
-
-/* submit start*/ 
-.submitted {
-  background-color: #0A0A0A;
-  height: 60vh;
-  padding-top: 40vh;
-  width: 100%;
-  display: grid;
-  row-gap: 1rem;
-  grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  ". thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks ."
-  ". . . . . . back back . . . . . .";
-
-}
-.submitted p {
-  color: white;
-  text-align: center;
-  grid-area: thanks;
-  font-size: 3.5ch;
-}
-.submitted a {
-  grid-area: back;
-align-self: center;  
-padding-top: 0.7rem;
-  margin-bottom: 40vh;
-  padding-bottom: 0.7rem;
-  text-transform: capitalize;
-  color: #F58F4B;
-  text-decoration: none;
-width: 100%;
-border: 1px solid white;
-text-align: center;
-border-radius: 1rem;
-font-weight: 500;
-font-size: 1.7ch;
-}
-/* submit end*/ 
-
-
-
-}
-
