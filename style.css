@@ -268,8 +268,56 @@ header ul {
 footer {
   clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
   width: 100vw;
+  padding-bottom: 5rem;
   background-color: #525252;
-  height: 25rem;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  row-gap: 1.2rem;
+  grid-template-areas:
+    ". phone phone phone phone ."
+    ". mail mail mail mail ."
+    ". youtube youtube youtube youtube ."
+    ". linkedin linkedin linkedin linkedin .";
+}
+
+footer div {
+  display: flex;
+  color: white;
+}
+
+.phone-me {
+  margin-top: 12rem;
+  grid-area: phone;
+}
+
+.mail-me {
+  grid-area: mail;
+}
+
+.youtube {
+  grid-area: youtube;
+}
+
+.linkedin {
+  grid-area: linkedin;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.4ch;
+  display: flex;
+  align-items: center;
+}
+
+footer a img {
+  margin-right: 1rem; 
+}
+
+footer img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /* Index end */
@@ -760,7 +808,7 @@ footer {
     ". more more more more ."
     ". write write write write ."
     ". form form form form .";
-  margin-bottom: -14rem;
+  margin-bottom: -18rem;
 }
 
 .contact-heading {
@@ -983,9 +1031,61 @@ footer {
     overflow-x: hidden;
   }
 
+
   footer {
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
     width: 100vw;
+    padding-bottom: 5rem;
+    background-color: #525252;
+    display: grid;
+    grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
+    grid-template-rows: auto;
+    column-gap: 0.5rem;
+    row-gap: 2rem;
+    grid-template-areas:
+      ". phone phone phone . . . . . . youtube youtube youtube ."
+      ". mail mail mail . . . . . . linkedin linkedin linkedin .";
   }
+  
+  footer div {
+    display: flex;
+    color: white;
+  }
+  
+  .phone-me {
+    margin-top: 12rem;
+    grid-area: phone;
+  }
+  
+  .mail-me {
+    grid-area: mail;
+  }
+  
+  .youtube {
+    margin-top: 12rem;
+    grid-area: youtube;
+  }
+  
+  .linkedin {
+    grid-area: linkedin;
+  }
+  footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 3ch;
+    display: flex;
+    align-items: center;
+  }
+  
+  footer a img {
+    margin-right: 2rem; 
+  }
+  
+  footer img {
+    width: 4rem;
+    height: 4rem;
+  }
+
 
   /*forside start*/
   .landing-grid {
@@ -1365,7 +1465,7 @@ footer {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
     margin-top: 3.5rem;
     padding-top: 3rem;
-    padding-bottom: 40rem;
+    padding-bottom: 46rem;
     row-gap: 1rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     grid-template-areas:
@@ -1432,7 +1532,7 @@ footer {
 
   .about-more {
     margin-top: 25rem;
-    margin-bottom: 25rem;
+    margin-bottom: 30rem;
     display: grid;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     grid-template-rows: auto;
@@ -1447,12 +1547,12 @@ footer {
     color: #0A0A0A;
     font-size: 8ch;
     font-weight: bolder;
-    margin-bottom: 0.5rem;
   }
 
   .about-more p {
     grid-area: description;
     font-size: 2ch;
+    margin-bottom: 6rem;
   }
 
 
