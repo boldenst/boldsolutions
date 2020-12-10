@@ -36,7 +36,6 @@ header ul {
 }
 /* Her styles Menu som er lånt fra tidligere projekt men er modificeret---------------------------------------------------------------------*/
 
-
 .sidenav {
   z-index: 250;
   height: 100vh;
@@ -152,6 +151,8 @@ footer img {
 
 /*Footer end---------------------------------------------------------------------*/
 /* Her styles pilen på siden, som er animeret til at pege ned ad, den indikerer at der er mere indhold længere nede på siden---------------------------------------------------------------------*/
+/* denne pil er en modifikation af en pil, som vi brugt i projektet Dans, dans, dans---------------------------------------------------------------------*/
+
 .scrolldown {
   position: absolute;
   top: 78vh;
@@ -1084,7 +1085,7 @@ footer img {
     font-size: 9ch;
     letter-spacing: 0.07ch;
     margin-top: 3rem;
-    align-self: center 0;
+    align-self: center;
   }
 
   .solutions-grid p {
@@ -1114,13 +1115,13 @@ footer img {
   .primary-link:hover {
     background-color: #F58F4B;
     color: white;
-    border: #F58F4B;
+    border: none;
   }
 
   .primary-link-black:hover {
     background-color: #F58F4B;
     color: white;
-    border: #F58F4B;
+    border: none;
   }
 
   /* Forside end---------------------------------------------------------------------*/
@@ -1266,11 +1267,13 @@ footer img {
   }
 
   .fullofwar {
+    border: none;
     margin-top: 5rem;
     height: 30rem;
   }
 
   .video-project {
+    border: none;
     margin-top: 5rem;
     height: 30rem;
   }
