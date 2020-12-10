@@ -1,3 +1,6 @@
+/* Styling af hjemmesiden*/
+/* Her styles generelle elementer*/
+
 * {
   padding: 0;
   margin: 0;
@@ -5,13 +8,12 @@
   font-family: centurygothic;
   z-index: 100;
 }
-
+/* indsættels af font---------------------------------------------------------------------*/
 @font-face {
   font-family: centurygothic;
   src: url(./fonts/911Fonts.com_CenturyGothicRegular__-_911fonts.com_fonts_mhpY.ttf);
 }
-
-/*Her styles headeren*/
+/*Her styles headeren---------------------------------------------------------------------*/
 header {
   z-index: 200;
   width: 100vw;
@@ -32,8 +34,7 @@ header ul {
   margin-top: 0.8rem;
   margin-left: 1.75rem;
 }
-
-/* Menu lånt fra tidligere projekt men er modificeret*/
+/* Her styles Menu som er lånt fra tidligere projekt men er modificeret---------------------------------------------------------------------*/
 
 
 .sidenav {
@@ -89,52 +90,67 @@ header ul {
   margin: 0.37rem;
   background-color: #F58F4B;
 }
+/*Menu end---------------------------------------------------------------------*/
 
-/*Menu end*/
+/*Her styles footeren---------------------------------------------------------------------*/
 
-
-/* Index Start */
-
-
-.landing-grid {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
-  background-color: #0A0A0A;
-  margin-top: 3.5rem;
-  padding-top: 10rem;
-  padding-bottom: 60vh;
+footer {
+  clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+  width: 100vw;
+  padding-bottom: 5rem;
+  background-color: #525252;
   display: grid;
   grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
   grid-template-rows: auto;
   column-gap: 0.5rem;
+  row-gap: 1.2rem;
   grid-template-areas:
-    ". . text text . ."
-    ". logo logo logo logo ."
-    ". more more more more .";
+    ". phone phone phone phone ."
+    ". mail mail mail mail ."
+    ". youtube youtube youtube youtube ."
+    ". linkedin linkedin linkedin linkedin .";
 }
 
-.landing-grid h2 {
+footer div {
+  display: flex;
   color: white;
-  grid-area: text;
-  font-size: 1.4em;
-  font-weight: 100;
-  text-align: center;
 }
 
-.landing-grid img {
-  grid-area: logo;
-  width: 100%;
+.phone-me {
+  margin-top: 12rem;
+  grid-area: phone;
 }
 
-.landing-grid h3 {
-  margin-top: 9rem;
-  grid-area: more;
-  color: #F58F4B;
-  font-size: 2.5ch;
-  font-weight: lighter;
-  text-align: center;
+.mail-me {
+  grid-area: mail;
 }
 
+.youtube {
+  grid-area: youtube;
+}
 
+.linkedin {
+  grid-area: linkedin;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.4ch;
+  display: flex;
+  align-items: center;
+}
+
+footer a img {
+  margin-right: 1rem;
+}
+
+footer img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+/*Footer end---------------------------------------------------------------------*/
 /* Her styles pilen på siden, som er animeret til at pege ned ad, den indikerer at der er mere indhold længere nede på siden---------------------------------------------------------------------*/
 .scrolldown {
   position: absolute;
@@ -192,7 +208,47 @@ header ul {
     opacity: 0;
   }
 }
+/* Pil end --------------------------------------------------------------------*/
 
+
+/* Index Start ---------------------------------------------------------------------*/
+.landing-grid {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
+  background-color: #0A0A0A;
+  margin-top: 3.5rem;
+  padding-top: 10rem;
+  padding-bottom: 60vh;
+  display: grid;
+  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
+  grid-template-rows: auto;
+  column-gap: 0.5rem;
+  grid-template-areas:
+    ". . text text . ."
+    ". logo logo logo logo ."
+    ". more more more more .";
+}
+
+.landing-grid h2 {
+  color: white;
+  grid-area: text;
+  font-size: 1.4em;
+  font-weight: 100;
+  text-align: center;
+}
+
+.landing-grid img {
+  grid-area: logo;
+  width: 100%;
+}
+
+.landing-grid h3 {
+  margin-top: 12rem;
+  grid-area: more;
+  color: #F58F4B;
+  font-size: 2.5ch;
+  font-weight: lighter;
+  text-align: center;
+}
 
 .solutions-grid {
   margin-top: 9rem;
@@ -206,8 +262,6 @@ header ul {
     ". description description description description ."
     "setup setup setup setup setup setup"
     ". . link link . .";
-
-
 }
 
 .solutions-grid h2 {
@@ -265,63 +319,8 @@ header ul {
   font-size: 2.5ch;
 }
 
-footer {
-  clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-  width: 100vw;
-  padding-bottom: 5rem;
-  background-color: #525252;
-  display: grid;
-  grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
-  grid-template-rows: auto;
-  column-gap: 0.5rem;
-  row-gap: 1.2rem;
-  grid-template-areas:
-    ". phone phone phone phone ."
-    ". mail mail mail mail ."
-    ". youtube youtube youtube youtube ."
-    ". linkedin linkedin linkedin linkedin .";
-}
-
-footer div {
-  display: flex;
-  color: white;
-}
-
-.phone-me {
-  margin-top: 12rem;
-  grid-area: phone;
-}
-
-.mail-me {
-  grid-area: mail;
-}
-
-.youtube {
-  grid-area: youtube;
-}
-
-.linkedin {
-  grid-area: linkedin;
-}
-footer a {
-  text-decoration: none;
-  color: white;
-  font-size: 2.4ch;
-  display: flex;
-  align-items: center;
-}
-
-footer a img {
-  margin-right: 1rem; 
-}
-
-footer img {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-
-/* Index end */
-/* Portfolio Start */
+/* Index end--------------------------------------------------------------------- */
+/* Portfolio Start ---------------------------------------------------------------------*/
 .portfolio-intro {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
   background-color: #0A0A0A;
@@ -343,7 +342,7 @@ footer img {
   grid-area: heading;
   text-align: center;
   font-size: 4ch;
-  font-weight: 100;
+  font-weight: lighter;
   margin-bottom: 2rem;
 }
 
@@ -354,7 +353,7 @@ footer img {
 }
 
 .portfolio-intro h3 {
-  margin-top: 9rem;
+  margin-top: 8rem;
   grid-area: more;
   color: #F58F4B;
   font-size: 2.5ch;
@@ -485,14 +484,13 @@ footer img {
     ". . link link . .";
 }
 
-
 .video-projects {
   clip-path: polygon(0% 10%, 100% 0%, 100% 89.5%, 0% 100%);
   background-color: #0a0a0a;
   margin-top: 6rem;
   padding-top: 9rem;
   padding-bottom: 18rem;
-  margin-bottom: -8rem;
+  margin-bottom: -13rem;
   grid-template-columns: 5vw 1fr 1fr 1fr 1fr 5vw;
   display: grid;
   grid-template-rows: auto;
@@ -538,17 +536,9 @@ footer img {
   height: 11rem;
   width: 100%;
 }
+/* Portfolio end ---------------------------------------------------------------------*/
 
-
-
-
-
-
-
-
-/* Portfolio end */
-
-/* CV Start */
+/* CV Start ---------------------------------------------------------------------*/
 .experience {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
   background-color: #0A0A0A;
@@ -581,10 +571,10 @@ footer img {
 }
 
 .experience h3 {
-  margin-top: 9rem;
+  margin-top: 8rem;
+  font-size: 2.5ch;
   grid-area: more;
   color: #F58F4B;
-  font-size: 2.5ch;
   font-weight: lighter;
   text-align: center;
 }
@@ -655,12 +645,12 @@ footer img {
   grid-area: telia;
   margin-top: 1rem;
 }
+/* CV end ---------------------------------------------------------------------*/
 
-/* CV end */
-
-/* About Start */
+/* About Start--------------------------------------------------------------------- */
 
 .about {
+  width: 100vw;
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 92%);
   margin-top: 3.5rem;
   padding-top: 3rem;
@@ -679,16 +669,17 @@ footer img {
     ". counter counter counter counter ."
     ". more more more more .";
 }
+
 .abouthead {
   justify-content: center;
   display: flex;
   grid-area: heading;
 }
+
 .behind {
   font-weight: lighter;
   margin-right: 0.6rem;
 }
-
 
 .bold {
   font-weight: bolder;
@@ -704,6 +695,7 @@ footer img {
   grid-area: mypic;
   width: 100%;
   margin-bottom: 3rem;
+  border-radius: 25px;
 }
 
 .name {
@@ -749,7 +741,7 @@ footer img {
 .about h2 {
   margin-top: 3rem;
   grid-area: more;
-  font-size: 3ch;
+  font-size: 2.5ch;
   font-weight: normal;
   color: #F58F4B;
   text-align: center;
@@ -788,9 +780,9 @@ footer img {
   margin-top: 3rem;
   width: 100%;
 }
+/* About end--------------------------------------------------------------------- */
 
-/* About end */
-/* Contact Start */
+/* Contact Start ---------------------------------------------------------------------*/
 .contact {
   clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
 
@@ -829,8 +821,8 @@ footer img {
   grid-area: more;
   text-align: center;
   font-weight: lighter;
-  padding-top: 5.5rem;
-  font-size: 3ch;
+  padding-top: 7rem;
+  font-size: 2.5ch;
 }
 
 .write {
@@ -927,9 +919,9 @@ footer img {
   animation-delay: 0s;
 }
 
-/* Contact end */
+/* Contact end--------------------------------------------------------------------- */
 
-/* Submit start*/
+/* Submit start---------------------------------------------------------------------*/
 .submitted {
   background-color: #0A0A0A;
   height: 60vh;
@@ -969,14 +961,10 @@ footer img {
   font-size: 1.7ch;
 }
 
-
-/* Submit end*/
-
-/*Styles til desktop*/
-
+/* Submit end---------------------------------------------------------------------*/
+/*Styles til desktop---------------------------------------------------------------------*/
 @media only screen and (min-width: 1368px) {
-
-  /*Universelt*/
+/*Universelt------------------------------------------------------------------------------------------------------------------------------------------*/
   .burgerdiv {
     display: none;
   }
@@ -1010,8 +998,6 @@ footer img {
     color: #F58F4B;
   }
 
-
-
   .toplogo {
     margin-left: 7.5vw;
     width: 17rem;
@@ -1031,63 +1017,38 @@ footer img {
     overflow-x: hidden;
   }
 
-
   footer {
     clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
-    width: 100vw;
     padding-bottom: 5rem;
-    background-color: #525252;
-    display: grid;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     row-gap: 2rem;
     grid-template-areas:
       ". phone phone phone . . . . . . youtube youtube youtube ."
       ". mail mail mail . . . . . . linkedin linkedin linkedin .";
   }
-  
-  footer div {
-    display: flex;
-    color: white;
-  }
-  
+
   .phone-me {
     margin-top: 12rem;
-    grid-area: phone;
   }
-  
-  .mail-me {
-    grid-area: mail;
-  }
-  
+
   .youtube {
     margin-top: 12rem;
-    grid-area: youtube;
   }
-  
-  .linkedin {
-    grid-area: linkedin;
-  }
+
   footer a {
-    text-decoration: none;
-    color: white;
     font-size: 3ch;
-    display: flex;
-    align-items: center;
   }
-  
+
   footer a img {
-    margin-right: 2rem; 
+    margin-right: 2rem;
   }
-  
+
   footer img {
     width: 4rem;
     height: 4rem;
   }
 
-
-  /*forside start*/
+  /*forside start---------------------------------------------------------------------*/
   .landing-grid {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
     padding-top: 13rem;
@@ -1101,39 +1062,26 @@ footer img {
 
   .landing-grid h2 {
     font-size: 5ch;
-    font-weight: 100;
   }
-
 
   .landing-grid h3 {
     margin-top: 5rem;
     font-size: 3ch;
-    font-weight: lighter;
   }
 
   .solutions-grid {
-    margin-top: 9rem;
-    margin-bottom: 9rem;
     padding-bottom: 10rem;
     padding-top: 10rem;
-    display: grid;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". setup setup setup setup setup . heading heading heading heading heading heading ."
       ". setup setup setup setup setup . description description description description description description ."
       ". setup setup setup setup setup . . . link link . . .";
-
-
   }
 
   .solutions-grid h2 {
-    grid-area: heading;
-    color: #0A0A0A;
     font-size: 9ch;
     letter-spacing: 0.07ch;
-    font-weight: bolder;
     margin-top: 3rem;
     align-self: center 0;
   }
@@ -1174,18 +1122,13 @@ footer img {
     border: #F58F4B;
   }
 
-  /* Forside end*/
-  /*portfolio start*/
+  /* Forside end---------------------------------------------------------------------*/
+  /*portfolio start---------------------------------------------------------------------*/
   .portfolio-intro {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-    background-color: #0A0A0A;
-    margin-top: 3.5rem;
     padding-top: 10rem;
     padding-bottom: 70vh;
-    display: grid;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". . . . . heading heading heading heading . . . . ."
       ". . . intro intro intro intro intro intro intro intro . . ."
@@ -1193,35 +1136,22 @@ footer img {
   }
 
   .portfolio-intro h1 {
-    text-align: center;
     font-size: 10ch;
     letter-spacing: 0.05ch;
-    font-weight: lighter;
-    margin-bottom: 2rem;
   }
 
   .portfolio-intro p {
-
-    font-weight: 100;
     font-size: 2.5ch;
   }
 
   .portfolio-intro h3 {
-    margin-top: 9rem;
-
     font-size: 4ch;
-    font-weight: lighter;
-    text-align: center;
   }
 
   .iso-project {
     margin-top: 9rem;
     margin-bottom: 10rem;
-    grid-area: solutions;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". heading heading heading heading heading heading . . . . . . ."
       ". description description description description description description . . . . . . ."
@@ -1243,17 +1173,14 @@ footer img {
   }
 
   .bold-skills {
-    margin-top: 0.8rem;
     margin-bottom: 5rem;
     font-size: 2.5ch;
-    font-weight: bold;
   }
 
   .project-heading {
     margin-top: 1rem;
     text-align: left;
     font-size: 6ch;
-    font-weight: bold;
   }
 
   .project-name {
@@ -1272,10 +1199,8 @@ footer img {
     margin-top: 0;
   }
 
-
   .balletto-project {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 92%);
-    margin-top: 6rem;
     padding-top: 25rem;
     padding-bottom: 26rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
@@ -1294,7 +1219,6 @@ footer img {
     font-weight: bold;
   }
 
-
   .project-description-black {
     margin-top: 1rem;
     margin-bottom: 4rem;
@@ -1302,13 +1226,9 @@ footer img {
   }
 
   .volta-project {
-    margin-bottom: 9rem;
     padding-top: 12rem;
     padding-bottom: 12rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". heading heading heading heading heading heading . . . . . . ."
       ". description description description description description description . . . . . . ."
@@ -1322,9 +1242,8 @@ footer img {
 
   .video-projects {
     clip-path: polygon(0% 10%, 100% 0%, 100% 89.5%, 0% 100%);
-    margin-top: 6rem;
     padding-top: 20rem;
-    padding-bottom: 33rem;
+    padding-bottom: 36rem;
     margin-bottom: -12rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     grid-template-areas:
@@ -1338,15 +1257,10 @@ footer img {
     margin-top: 3rem;
     text-align: left;
     font-size: 8ch;
-    font-weight: bold;
   }
 
   .video-info {
     font-size: 2.2ch;
-  }
-
-  .video-skills {
-    margin-top: 0.7rem;
   }
 
   .fullofwar {
@@ -1359,18 +1273,13 @@ footer img {
     height: 30rem;
   }
 
-  /* portfolio end*/
-  /*cv start*/
+  /* portfolio end---------------------------------------------------------------------*/
+  /*cv start---------------------------------------------------------------------*/
   .experience {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-    background-color: #0A0A0A;
-    margin-top: 3.5rem;
     padding-top: 10rem;
-    padding-bottom: 75vh;
-    display: grid;
+    padding-bottom: 70rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". . . . . heading heading heading heading . . . . ."
       ". . . intro intro intro intro intro intro intro intro . . ."
@@ -1378,49 +1287,39 @@ footer img {
   }
 
   .experience h1 {
-    text-align: center;
     font-size: 10ch;
     letter-spacing: 0.05ch;
     font-weight: lighter;
-    margin-bottom: 2rem;
-  }
-
-  .experience p {
-    font-weight: 100;
-    font-size: 2.5ch;
   }
 
   .experience h3 {
-    margin-top: 9rem;
     font-size: 4ch;
     font-weight: lighter;
     text-align: center;
   }
+
   .cv-more {
     margin-bottom: 17rem;
     padding-top: 10rem;
     padding-bottom: 33rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    display: grid;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". heading heading heading heading heading . . . . . . . ."
       ". description description description description description description description description description description description description ."
       ". zeal zeal zeal zeal zeal zeal zeal zeal zeal zeal zeal zeal .";
   }
-  
+
   .cv-more h2 {
     font-size: 8ch;
     text-align: left;
     margin-top: 6rem;
   }
-  
+
   .koegegym {
     font-size: 2.5ch;
     margin-top: 2rem;
   }
-  
+
   .zealandacad {
     font-size: 2.5ch;
     margin-top: 1.5rem;
@@ -1430,42 +1329,35 @@ footer img {
     clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
     margin-top: 15rem;
     padding-top: 20rem;
-    padding-bottom: 55rem;
-    margin-bottom: -8rem;
+    padding-bottom: 60rem;
+    margin-bottom: -10rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     grid-template-areas:
-      ". . . . . . . . . . heading heading heading ."
-      ". . . . . . . webhelp webhelp webhelp webhelp webhelp webhelp ."
-      ". . . . . . . telia telia telia telia telia telia .";
+      ". heading heading heading . . . . . . . . . ."
+      ". webhelp webhelp webhelp webhelp webhelp webhelp . . . . . . ."
+      ". telia telia telia telia telia telia . . . . . . .";
   }
-  
+
   .cv-work h2 {
     font-size: 8ch;
-    text-align: left;
     margin-top: 6rem;
   }
-  
+
   .webhelp {
     font-size: 2.5ch;
-    margin-top: 2rem;  
-    text-align: right;
+    margin-top: 2rem;
   }
-  
+
   .telia {
     font-size: 2.5ch;
-    margin-top: 1.5rem;  
-    text-align: right;
-
+    margin-top: 1.5rem;
   }
 
-
-  /* cv end*/
-  /*about start*/
+  /* cv end---------------------------------------------------------------------*/
+  /*about start---------------------------------------------------------------------*/
   .about {
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
-    margin-top: 3.5rem;
-    padding-top: 3rem;
-    padding-bottom: 46rem;
+    padding-bottom: 52rem;
     row-gap: 1rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
     grid-template-areas:
@@ -1485,7 +1377,7 @@ footer img {
 
   .about img {
     margin-top: 0;
-    margin-bottom: 3rem;
+    border-radius: 1rem;
   }
 
   .name {
@@ -1502,76 +1394,48 @@ footer img {
   }
 
   #daybox {
-    margin-left: 0.3rem;
     font-size: 2.5ch;
-
   }
 
-  .age {
-    grid-area: age;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-  }
 
   .year {
-    color: #F58F4B;
     font-size: 2.5ch;
-    margin-right: 0.2rem;
-
   }
 
   .about h2 {
-    margin-top: 0.;
-    grid-area: more;
-    font-size: 3ch;
-    font-weight: normal;
-    color: #F58F4B;
-    text-align: center;
+    margin-top: 0;
   }
 
   .about-more {
-    margin-top: 25rem;
-    margin-bottom: 30rem;
-    display: grid;
+    margin-top: 26rem;
+    margin-bottom: 33rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-rows: auto;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". heading heading heading heading heading heading . . setup setup setup setup ."
       ". description description description description description description . . setup setup setup setup .";
   }
 
   .about-more h2 {
-    grid-area: heading;
-    color: #0A0A0A;
     font-size: 8ch;
-    font-weight: bolder;
   }
 
   .about-more p {
-    grid-area: description;
     font-size: 2ch;
     margin-bottom: 6rem;
   }
 
 
   .about-more img {
-    grid-area: setup;
     margin-top: 0;
-    width: 100%;
   }
 
-  /* about end*/
-  /*contact start*/
+  /* about end---------------------------------------------------------------------*/
+  /*contact start---------------------------------------------------------------------*/
   .contact {
     clip-path: polygon(0% 0%, 100% 0%, 100% 89.5%, 0% 95%);
-
-    margin-top: 3.5rem;
     padding-top: 14rem;
     padding-bottom: 60vh;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    column-gap: 0.5rem;
     grid-template-areas:
       ". heading heading heading . . . . form form form form . ."
       ". info info info info info . . form form form form . ."
@@ -1583,10 +1447,6 @@ footer img {
   .contact-heading {
     text-align: left;
     font-size: 6ch;
-  }
-
-  .contact-description {
-    margin-top: 4rem;
   }
 
   .contact-me {
@@ -1602,41 +1462,15 @@ footer img {
   }
 
   .contact-form input {
-    width: 100%;
-    border-radius: 0.4rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-    border: none;
   }
 
   .contact-form textarea {
-    width: 100%;
-    text-decoration: none;
-    border-radius: 0.4rem;
-    padding-top: 0rem;
     padding-bottom: 10rem;
-    border: none;
-
-  }
-
-  .contact-form p {
-    margin-bottom: 0.3rem;
   }
 
   .contact-form button {
-    margin-top: 1rem;
-    background-color: #0a0a0a;
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
-    text-transform: capitalize;
-    color: #F58F4B;
-    text-decoration: none;
-    width: 100%;
-    border: 1px solid white;
-    text-align: center;
-    border-radius: 0.7rem;
-    font-weight: 500;
     font-size: 1.9ch;
 
   }
@@ -1645,50 +1479,18 @@ footer img {
     display: none;
   }
 
-  /* contact end*/
+  /* contact end---------------------------------------------------------------------*/
 
-  /* submit start*/
+  /* submit start---------------------------------------------------------------------*/
   .submitted {
-    background-color: #0A0A0A;
-    height: 60vh;
-    padding-top: 40vh;
-    width: 100%;
-    display: grid;
-    row-gap: 1rem;
     grid-template-columns: 7vw 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 7vw;
-    grid-template-rows: auto;
     grid-template-areas:
       ". thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks thanks ."
       ". . . . . . back back . . . . . .";
-
   }
 
   .submitted p {
-    color: white;
-    text-align: center;
-    grid-area: thanks;
     font-size: 3.5ch;
   }
-
-  .submitted a {
-    grid-area: back;
-    align-self: center;
-    padding-top: 0.7rem;
-    margin-bottom: 40vh;
-    padding-bottom: 0.7rem;
-    text-transform: capitalize;
-    color: #F58F4B;
-    text-decoration: none;
-    width: 100%;
-    border: 1px solid white;
-    text-align: center;
-    border-radius: 1rem;
-    font-weight: 500;
-    font-size: 1.7ch;
-  }
-
-  /* submit end*/
-
-
-
+  /* submit end---------------------------------------------------------------------*/
 }
